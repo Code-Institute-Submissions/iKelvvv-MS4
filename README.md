@@ -125,7 +125,25 @@
 
 [Go to the top](#table-of-contents)
 
+## Project Checklist
+- Install Django and the supporting libaries
+    -  Install Django and Gunicorn. Gunicorn is the server I am using to run Django on Heroku.
+    - Install support libaries including psycopg2, this is used to connect the the PostgreSQL databse
+    - Install Cloudinary libaries, this is a host provider service that stores images
+    - Create the requirements.txt file. This is includes the projects dependecies allowing us to run the project in Heroku.
 
+- Create a new, blank Django Project
+    - Create a new project
+    - Create the app
+    - Add restaurant_booking to the installed apps in settings.py
+    - Migrate all new changes to the database
+    - Run the server to test
+    
+    !!! INSERT TEST SUCCESSFUL IMAGE !!! 
+
+- Setup project to use Cloudinary and PostgreSQL
+
+- Deploy new empty project to Heroku
 
 <a name="deployment"></a>
 
