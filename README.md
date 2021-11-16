@@ -138,10 +138,48 @@
     - Add restaurant_booking to the installed apps in settings.py
     - Migrate all new changes to the database
     - Run the server to test
-    
+
     !!! INSERT TEST SUCCESSFUL IMAGE !!! 
 
 - Setup project to use Cloudinary and PostgreSQL
+    - Create new Heroku app
+        - Sign into Heroku
+        - Select New
+        - Select create new app
+        - Enter a relevant app name
+        - Select appropriate region
+        - Select the create app button
+
+    - Attach PostgreSQL database
+        - In Heroku go to resources
+        - Search for Postgres in the add-ons box
+        - Select Heroku Postgres
+        - Submit order form
+
+    - Prepare environment and settings.py file
+        - Create env.py file
+        - Add DATABASE_URL with the Postgres URL from Heroku
+        - Add SECRET_KEY with a randomly generated key
+        - Add SECRET_KEY and generated key to the config vars in Heroku
+        - Add if statement to settings.py to prevent the production server from erroring
+        - Replace insecure key with the enviroment variable for the SECRET_KEY
+        - Add Heroku database as the back end
+        - Migrate changes to new databse
+
+    - Get static media files stored on Cloudinary
+        - Create Cloudinary account
+        - From the dashboard, copy the API Environment variable
+        - In the settings.py file create a new enviroment variable for CLOUDINARY_URL
+        - Add the CLOUDINARY_URL variable to Heroku
+        - Add a temporary config var for DISABLE_COLLECTSTATIC
+        - In settings.py add Cloudinary as an installed app
+        - Add static and media file variables
+        - Add templates directory
+        - Change DIR's key to point to TEMPALTES_DIR
+        - Add Heroku host name to allowed hosts
+        - Create directories for media, static and templates in project workspace
+        - Create a Procfile
+
 
 - Deploy new empty project to Heroku
 
