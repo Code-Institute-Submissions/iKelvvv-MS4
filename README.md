@@ -71,7 +71,65 @@
 
 
 ### Wire-frames
+Home/Landing Page Desktop:
+![home_page_desktop](documentation_assets/wireframes/home_desktop.png)
 
+Home/Landing Page Mobile:
+![home_page_mobile](documentation_assets/wireframes/home_mobile.png)
+
+Navigation Bar Mobile:
+![navigation_bar_mobile](documentation_assets/wireframes/navbar_mobile.png)
+
+Menu Page Desktop:
+![menu_page_desktop](documentation_assets/wireframes/menu_desktop.png)
+
+Menu Page Mobile:
+![menu_page_mobile](documentation_assets/wireframes/menu_mobile.png)
+
+Register Page Desktop:
+![register_page_desktop](documentation_assets/wireframes/register_desktop.png)
+
+Register Page Mobile:
+![register_page_mobile](documentation_assets/wireframes/register_mobile.png)
+
+Login Page Desktop:
+![login_page_desktop](documentation_assets/wireframes/login_desktop.png)
+
+Login Page Mobile:
+![login_page_mobile](documentation_assets/wireframes/login_mobile.png)
+
+User Logged In Desktop:
+![user_logged_in_desktop](documentation_assets/wireframes/user_logged_in_desktop.png)
+
+User Logged In Mobile:
+![user_logged_in_mobile](documentation_assets/wireframes/user_logged_in_mobile.png)
+
+Online Booking Page Desktop:
+![online_booking_page_desktop](documentation_assets/wireframes/online_booking_desktop.png)
+
+Online Booking Page Mobile:
+![online_booking_page_mobile](documentation_assets/wireframes/online_booking_mobile.png)
+
+Contact Page Desktop:
+![contact_page_desktop](documentation_assets/wireframes/contact_desktop.png)
+
+Contact Page Mobile 1:
+![contact_page_mobile](documentation_assets/wireframes/contact_mobile_1.png)
+
+Contact Page Mobile 2:
+![contact_page_mobile](documentation_assets/wireframes/contact_mobile_2.png)
+
+Edit Profile Page Desktop:
+![edit_profile_page_desktop](documentation_assets/wireframes/edit_profile_desktop.png)
+
+Edit Profile Page Mobile:
+![edit_profile_page_mobile](documentation_assets/wireframes/edit_profile_mobile.png)
+
+Manage Booking Page Desktop:
+![manage_booking_page_desktop](documentation_assets/wireframes/manage_booking_desktop.png)
+
+Manage Booking Page Mobile:
+![manage_booking_page_mobile](documentation_assets/wireframes/manage_booking_mobile.png)
 
 
 <a name="surface"></a>
