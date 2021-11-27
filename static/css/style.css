@@ -1,0 +1,35 @@
+/* Global style */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: black;
+}
+
+/* Navigation bar */
+#logo {
+    margin-left: 10%
+}
+
+.active_page {
+    background-color: #BD3C31;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+}
+
+footer i {
+    font-size: 200%;
+    padding: 3%;
+    color: #BD3C31
+}
