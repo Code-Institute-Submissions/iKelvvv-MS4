@@ -11,9 +11,6 @@ body {
 }
 
 /* Navigation bar */
-#logo {
-    margin-left: 10%
-}
 
 .active_page {
     background-color: #BD3C31;
@@ -25,46 +22,18 @@ body {
 
 /* Footer */
 
-footer {
-    text-align: center;
-}
-
 footer i {
     font-size: 200%;
     padding: 3%;
     color: #BD3C31
 }
 
-/* Home Page */
-
-#banner {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .btn-danger {
     background-color: #BD3C31;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5%;
-
-}
-
-#intro {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    text-align: center;
 }
 
 #red_dragon {
     width: 35%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 
 /* Media query max width 760px for tablets devices */
@@ -83,7 +52,6 @@ footer i {
 
 /* Media query max width 320px for small mobile devices */
 @media screen and (max-width: 320px) {
-
     #red_dragon {
         width: 80%;
     }
