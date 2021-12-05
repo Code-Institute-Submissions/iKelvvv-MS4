@@ -10,6 +10,10 @@ body {
     color: white;
 }
 
+.custom-red {
+    background-color: #BD3C31;
+}
+
 /* Navigation bar */
 
 .active_page {
@@ -35,6 +39,7 @@ footer i {
 #red_dragon {
     width: 35%;
 }
+
 
 /* Media query max width 760px for tablets devices */
 @media screen and (max-width: 768px) {
