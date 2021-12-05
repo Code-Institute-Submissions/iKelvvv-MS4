@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="static/images/top_chef_logo.jpeg" alt="" width="140" height="70">
+                <img src="static/images/top_chef_logo.jpeg" alt="restaurant_logo" width="140" height="70">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -49,16 +49,16 @@
                     </li>
                     {% endif %}
                     <li class="nav-item px-2">
-                        <a class="nav-link active_page" href="#">Home</a>
+                        <a class="nav-link active_page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Book Now</a>
+                        <a class="nav-link" href="{% url 'online_booking' %}">Book Now</a>
                     </li>
             </div>
         </div>
@@ -73,7 +73,7 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto text-center">
-        <i class="fab fa-facebook"></i>
+        <i class="fab fa-facebook" ></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
     </footer>
