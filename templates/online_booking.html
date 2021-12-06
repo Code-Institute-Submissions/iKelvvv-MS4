@@ -2,6 +2,23 @@
 
 {% block content %}
 
+<div class="container">
+    <div class="row w-75 mx-auto">
+        <div class="col-6">
+            <button type="button" class="btn btn-danger mx-auto mt-5 d-block">
+                <a class="nav-link text-white" href="{% url 'home' %}">Edit Profile</a>   
+            </button>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-danger mx-auto mt-5 d-block">
+                <a class="nav-link text-white" href="{% url 'home' %}">My Bookings</a>   
+            </button>
+        </div>
+    </div>
+</div>
+
+</div>
+
 <div class="w-75 mx-auto py-5">
     <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
         <div class="col-md-6">
