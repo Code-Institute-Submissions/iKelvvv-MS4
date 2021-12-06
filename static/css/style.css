@@ -14,6 +14,11 @@ body {
     background-color: #BD3C31;
 }
 
+.contact_icons {
+    color: #BD3C31;
+    font-size: 300%;
+}
+
 /* Navigation bar */
 
 .active_page {

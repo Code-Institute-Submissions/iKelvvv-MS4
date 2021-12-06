@@ -2,27 +2,44 @@
 
 {% block content %}
 
-<div class="w-50 mx-auto my-5">
-    <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
-        <div class="col-12">
-            <label for="full_name" class="form-label">Full Name</label>
-            <input type="text" class="form-control text_input" name="full_name" id="full_name" required>
+<div class="container">
+    <div class="row">
+        <div class="col-6 py-5">
+            <img class="img-fluid rounded"
+                src="https://res.cloudinary.com/ddwgmv42x/image/upload/v1638819691/maps_location_j1v0ih.png" alt="">
         </div>
 
-        <div class="col-12">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control text_input" name="email_address" id="email" required>
-        </div>
+        <div class="col-6 py-5">
+            <div class="contact_icons">
+                <i class="fas fa-phone px-5"></i>
+                <i class="fas fa-envelope px-5"></i>
+                <i class="far fa-clock px-5"></i>
+                <i class="fas fa-map-marker-alt px-5"></i>
+            </div>
 
-        <div class="col-12">
-            <label for="message">Your message</label>
-            <textarea class="form-control" name="message" id="message" rows="3"></textarea>
-        </div>
 
-        <div class="col-12">
-            <button type="submit" class="btn custom-red text-white">Submit Message</button>
+            <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
+                <div class="col-12">
+                    <label for="full_name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control text_input" name="full_name" id="full_name" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control text_input" name="email_address" id="email" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="message">Your message</label>
+                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn custom-red text-white">Submit Message</button>
+                </div>
+            </form>
         </div>
-    </form>
+    </div>
 </div>
 
 
