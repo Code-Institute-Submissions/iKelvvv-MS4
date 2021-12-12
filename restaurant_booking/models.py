@@ -10,7 +10,7 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Booking Requested"), (1, "Booking Accepted"))
 
 class Booking(models.Model):
-    title = models.CharField(max_length=200, unique=True, default='Booking Request')
+    title = models.CharField(max_length=200, default='Booking Request')
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_bookings")
     booking_date = models.DateField(auto_now=False)
     booking_time = models.TimeField(auto_now=False)

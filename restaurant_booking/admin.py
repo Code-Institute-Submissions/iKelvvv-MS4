@@ -11,7 +11,7 @@ from .models import Booking
 class BookingAdmin(admin.ModelAdmin):
     list_filter = ('status', 'booking_time', 'booking_date')
     readonly_fields = ('title',)
-    list_display = ('title', 'user_id', 'booking_date', 'booking_time', 'guest_count')
+    list_display = ('title', 'user_id', 'booking_date', 'booking_time', 'guest_count', 'status')
     search_fields = ('title', 'user_id')
     actions = ['approve_booking']
 
