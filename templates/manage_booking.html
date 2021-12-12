@@ -2,5 +2,36 @@
 
 {% block content %}
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center text-decoration-underline py-3">Manage my Bookings</h2>
+        </div>
+    </div>
+</div>
+
+<div class="w-75 mx-auto py-5">
+    <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
+       
+
+        <div class="col-12">
+            <label for="date">Change Booking Date:</label>
+            <input type="date" class="form-control" id="date" name="date">
+        </div>
+
+        <div class="col-12">
+            <label for="time">Change Booking Time:</label>
+            <input type="time" class="form-control" id="appt" name="appt">
+        </div>
+
+        <div class="col-12 mx-auto">
+            <label for="guest_count">Change Number of Guests:</label>
+            <input type="number" class="form-control" id="guest_count" name="guest_count" min="1" max="10">
+        </div>
+
+        <div class="col-12 text-center">
+            <button type="submit" class="btn custom-red text-white">Confirm Changes</button>
+        </div>
+    </form>
 
 {% endblock %}
