@@ -29,13 +29,9 @@ class EditProfile(TemplateView):
 
 class ManageBooking(generic.ListView): 
     model = Booking
+    queryset = Booking.objects.all()
     template_name = "manage_booking.html"
     paginate_by = 6
 
-    def get_booking_data(request):
-        bookings = Booking.objects.all()
-        context = {
-            'bookings': bookings
-        }
-        return render(request, 'manage_booking/', context)
-        
+    def get_queryset(self): 
+        return Booking.objects.filter(user_id=self.request.user)
