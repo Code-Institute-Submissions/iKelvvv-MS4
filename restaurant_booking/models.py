@@ -21,7 +21,7 @@ class Booking(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
-        ordering = ['-created_on']
+        ordering = ['-booking_date']
 
     # Django magic method to return string represention of an object
     def __str__(self):
