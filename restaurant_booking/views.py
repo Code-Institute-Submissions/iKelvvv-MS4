@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, reverse
+from django.http import HttpResponseRedirect
 # Import Django generic libary
 from django.views import generic, View
 from django.views.generic import TemplateView, DetailView
@@ -36,7 +37,19 @@ class ManageBooking(generic.ListView):
     def get_queryset(self): 
         return Booking.objects.filter(user_id=self.request.user)
 
-class EditBooking(generic.ListView):
+class EditBooking(View):
     model = Booking
+    queryset = Booking.objects.all()
     template_name = "edit_booking.html"
     context_object_name = 'edit_booking'
+
+    def get(self, request, booking_id, *args, **kwargs):
+        queryset = Booking.objects.all()
+        booking = get_object_or_404(queryset, pk=booking_id)
+
+        return render(
+            request,
+            "edit_booking.html",
+            {
+                "booking": booking
+            })
