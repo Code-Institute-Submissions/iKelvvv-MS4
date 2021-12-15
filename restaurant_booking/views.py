@@ -5,6 +5,7 @@ from django.views import generic, View
 from django.views.generic import TemplateView, DetailView
 # Import Booking model from models
 from .models import Booking
+from .forms import UpdateBookingDetails
 
 
 # Create your views here.
@@ -51,5 +52,7 @@ class EditBooking(View):
             request,
             "edit_booking.html",
             {
-                "booking": booking
-            })
+                "booking": booking,
+                "Update_BookingDetails": UpdateBookingDetails()
+            },
+            )
