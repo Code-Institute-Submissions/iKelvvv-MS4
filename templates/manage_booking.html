@@ -8,59 +8,36 @@
             <h2 class="text-center text-decoration-underline py-3">Manage my Bookings</h2>
         </div>
     </div>
-
+    {{ booking.booking_date }}
     {% for booking in booking_list %}
     <div class="row">
-        <table class="table text-white text-center mt-5">
-            <thead>
-                <tr>
-                    <th scope="col">Booking Date:</th>
-                    <th scope="col">Booking Time:</th>
-                    <th scope="col">Guest Count:</th>
-                    <th scope="col">Booking Status:</th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>{{ booking.booking_date }}</td>
-                    <td>{{ booking.booking_time }}</td>
-                    <td>{{ booking.guest_count }}</td>
-                    <td>{{ booking.status }}</td>
-                    <td>
-                        <button class="btn btn-primary custom-red text-white" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#modify_booking" aria-expanded="false" aria-controls="collapseExample">
-                            Change Booking Details
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="collapse" id="modify_booking">
-            <div class="card card-body booking_changes">
-                <table class="table text-white text-center">
-                    <thead>
-                        <tr>
-                            <th scope="col">New Booking Date:</th>
-                            <th scope="col">New Booking Time:</th>
-                            <th scope="col">New Guest Count:</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
-                                <td><input type="date" class="form-control" id="date" name="date"></td>
-                                <td><input type="time" class="form-control" id="appt" name="appt"></td>
-                                <td><input type="number" class="form-control" id="guest_count" name="guest_count"
-                                        min="1" max="10"></td>
-                            </form>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-            </div>
+        <div class="col-12">
+            <table class="table text-white text-center mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Booking Reference:</th>
+                        <th scope="col">Booking Date:</th>
+                        <th scope="col">Booking Time:</th>
+                        <th scope="col">Guest Count:</th>
+                        <th scope="col">Booking Status:</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ booking.booking_id }}</td>
+                        <td>{{ booking.booking_date }}</td>
+                        <td>{{ booking.booking_time }}</td>
+                        <td>{{ booking.guest_count }}</td>
+                        <td>{{ booking.status }}</td>
+                        <td>
+                            <button class="btn custom-red text-white" type="button">
+                                Change Booking Details
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
