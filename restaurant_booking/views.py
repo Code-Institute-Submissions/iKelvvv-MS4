@@ -1,7 +1,7 @@
 from django.shortcuts import render
 # Import Django generic libary
 from django.views import generic, View
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, DetailView
 # Import Booking model from models
 from .models import Booking
 
@@ -35,3 +35,8 @@ class ManageBooking(generic.ListView):
 
     def get_queryset(self): 
         return Booking.objects.filter(user_id=self.request.user)
+
+class EditBooking(generic.ListView):
+    model = Booking
+    template_name = "edit_booking.html"
+    context_object_name = 'edit_booking'

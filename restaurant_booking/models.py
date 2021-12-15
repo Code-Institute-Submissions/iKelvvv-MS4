@@ -22,6 +22,3 @@ class Booking(models.Model):
 
     class Meta:
         ordering = ['-booking_date']
-
-    # Django magic method to return string represention of an object
-
