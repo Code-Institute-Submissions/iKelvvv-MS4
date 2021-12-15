@@ -1,5 +1,5 @@
+import uuid
 from django.db import models
-
 # Import Django authentication user system
 from django.contrib.auth.models import User
 # Import cloudinary for featured image
@@ -11,7 +11,7 @@ STATUS = ((0, "Booking Requested"), (1, "Booking Accepted"))
 
 
 class Booking(models.Model):
-    title = models.CharField(max_length=200, default='Booking Request')
+    booking_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_bookings")
     booking_date = models.DateField(auto_now=False)
     booking_time = models.TimeField(auto_now=False)
@@ -24,5 +24,4 @@ class Booking(models.Model):
         ordering = ['-booking_date']
 
     # Django magic method to return string represention of an object
-    def __str__(self):
-        return self.title
+

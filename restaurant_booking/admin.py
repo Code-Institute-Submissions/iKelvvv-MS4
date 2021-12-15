@@ -10,9 +10,9 @@ from .models import Booking
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     list_filter = ('status', 'booking_time', 'booking_date')
-    readonly_fields = ('title',)
-    list_display = ('title', 'user_id', 'booking_date', 'booking_time', 'guest_count', 'status', 'created_on')
-    search_fields = ('title', 'user_id')
+    readonly_fields = ('booking_id',)
+    list_display = ('booking_id', 'user_id', 'booking_date', 'booking_time', 'guest_count', 'status', 'created_on')
+    search_fields = ('booking_id', 'user_id')
     actions = ['approve_booking']
 
     def approve_booking(self, request, queryset):
