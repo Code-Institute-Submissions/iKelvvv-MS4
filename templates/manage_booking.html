@@ -31,9 +31,11 @@
                         <td>{{ booking.guest_count }}</td>
                         <td>{{ booking.status }}</td>
                         <td>
-                            <button class="btn custom-red text-white" type="button">
-                                Change Booking Details
-                            </button>
+                            <a href="{% url 'edit_booking' booking.booking_id %}">
+                                <button class="btn custom-red text-white" type="submit">
+                                    Change Booking Details
+                                </button>
+                            </a>
                         </td>
                     </tr>
                 </tbody>
