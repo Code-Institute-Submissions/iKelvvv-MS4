@@ -40,19 +40,40 @@ class ManageBooking(generic.ListView):
 
 class EditBooking(View):
     model = Booking
-    queryset = Booking.objects.all()
+    # queryset = Booking.objects.all()
     template_name = "edit_booking.html"
     context_object_name = 'edit_booking'
 
     def get(self, request, booking_id, *args, **kwargs):
-        queryset = Booking.objects.all()
-        booking = get_object_or_404(queryset, pk=booking_id)
+        # queryset = Booking.objects.all()
+        booking = get_object_or_404(Booking, pk=booking_id)
 
         return render(
             request,
             "edit_booking.html",
             {
                 "booking": booking,
-                "Update_BookingDetails": UpdateBookingDetails()
+                'updated': False,
+                "Update_BookingDetails": UpdateBookingDetails(instance=booking)
             },
-            )
+        )
+
+    def post(self, request, booking_id, *args, **kwargs):
+        booking = get_object_or_404(Booking, pk=booking_id)
+
+        booking_details_form = UpdateBookingDetails(request.POST, instance=booking)
+
+        if booking_details_form.is_valid():
+            booking_updates = booking_details_form.save()
+        else:
+            booking_details_form = UpdateBookingDetails(instance=booking)
+
+        return render(
+            request,
+            "edit_booking.html",
+            {
+                "booking": booking,
+                'updated': True,
+                "Update_BookingDetails": booking_details_form,
+            },
+        )
