@@ -87,11 +87,20 @@
 <div class="container text-center custom-red mt-5">
     <div class="row my-3">
         <div class="col-12">
+            {% if updated %}
+            <div class="alert alert-success" role="alert">
+                Your booking is awaiting approval
+            </div>
+            {% else %}
+
             {% if user.is_authenticated %}
-            <form method="post"></form>
-            {{ Update_BookingDetails | crispy }}
-            {% csrf_token %}
-            <button type="submit" class="btn custom-red text-white">Submit Changes</button>
+
+            <form method="post">
+                {{ Update_BookingDetails | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn custom-red text-white">Submit Changes</button>
+            </form>
+            {% endif %}
             {% endif %}
         </div>
     </div>
