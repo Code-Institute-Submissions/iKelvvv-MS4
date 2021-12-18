@@ -2,6 +2,7 @@
 
 {% block content %}
 
+
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -10,22 +11,10 @@
     </div>
 </div>
 
+
 <div class="w-75 mx-auto py-5">
-    <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
-        <div class="col-12">
-            <label for="full_name" class="form-label">Full Name</label>
-            <input type="text" class="form-control text_input" name="full_name" id="full_name" required>
-        </div>
-
-        <div class="col-12">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control text_input" name="email_address" id="email" required>
-        </div>
-
-        <div class="col-12">
-            <label for="phone" class="form-label">Telephone Number</label>
-            <input type="tel" class="form-control" id="phone" name="phone" required>
-        </div>
+    <form class="row g-3" method="POST">
+        {% csrf_token %}
 
         <div class="col-6">
             <label for="date">Select a Date:</label>
@@ -34,7 +23,7 @@
 
         <div class="col-6">
             <label for="time">Select a time:</label>
-            <input type="time" class="form-control" id="appt" name="appt">
+            <input type="time" class="form-control" id="time" name="time">
         </div>
 
         <div class="col-6 mx-auto">
@@ -42,9 +31,15 @@
             <input type="number" class="form-control" id="guest_count" name="guest_count" min="1" max="10">
         </div>
 
+        <div class="col-6">
+            <label for="date">Allergy Information:</label>
+            <input type="text" class="form-control" id="comments" name="comments">
+        </div>
+
         <div class="col-12 text-center">
             <button type="submit" class="btn custom-red text-white">Make Reservation</button>
         </div>
+
     </form>
 
         <div class="container">
