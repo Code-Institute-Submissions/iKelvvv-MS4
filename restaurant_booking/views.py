@@ -78,7 +78,7 @@ class EditBooking(View):
             "edit_booking.html",
             {
                 "booking": booking,
-                'updated': False,
+                "updated": False,
                 "Update_BookingDetails": UpdateBookingDetails(instance=booking)
             },
         )
