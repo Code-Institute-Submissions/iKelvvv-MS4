@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from django.views import generic, View
 from django.views.generic import TemplateView, DetailView
 # Import Booking model from models
-from .models import Booking
+from .models import Booking, UserProfile
 from .forms import UpdateBookingDetails
 from django.shortcuts import redirect
 
@@ -19,6 +19,10 @@ class MenuView(TemplateView):
 
 class ContactView(TemplateView):
     template_name = "contact.html"
+
+
+class CreateProfile(TemplateView):
+    template_name = "create_profile.html"
 
 
 class EditProfile(TemplateView):
