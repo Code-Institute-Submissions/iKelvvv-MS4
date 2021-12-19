@@ -21,12 +21,34 @@ class ContactView(TemplateView):
     template_name = "contact.html"
 
 
-class CreateProfile(TemplateView):
+class CreateProfile(View):
     template_name = "create_profile.html"
+    
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "create_profile.html",
+        )
+
+    def post(self, request):
+        f_name = request.POST.get("f_name")
+        l_name = request.POST.get("l_name")
+        tele = request.POST.get("phone_number")
+
+        CreateUserProfile = UserProfile.objects.create(
+            first_name=f_name,
+            last_name=l_name,
+            phone_number=tele,
+            user=request.user,
+        )
+
+        CreateUserProfile.save()
+
+        return redirect(reverse('home'))
 
 
 class EditProfile(TemplateView):
-    template_name = "edit_profile.html"
+    template_name = "/edit_profile.html"
 
 
 class ManageBooking(generic.ListView): 
