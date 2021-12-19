@@ -15,7 +15,7 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_bookings")
     booking_date = models.DateField(auto_now=False)
     booking_time = models.TimeField(auto_now=False)
-    booking_comments = models.TextField(max_length=200, blank=True, default='Please note any allergies')
+    booking_comments = models.TextField(max_length=200, blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     guest_count = models.IntegerField()
     status = models.IntegerField(choices=STATUS, default=0)
