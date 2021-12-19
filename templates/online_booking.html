@@ -10,16 +10,6 @@
         </div>
     </div>
 
-    <div class="row my-3">
-        <div class="col-12 text-center">
-            If you are not logged in, please
-            <a href="{% url 'account_signup' %}">signup</a>
-            /
-            <a href="{% url 'account_login' %}">login</a>
-            first.
-        </div>
-    </div>
-
     {% if user.is_authenticated %}
     <div class="w-75 mx-auto py-5">
         <form class="row g-3" method="POST">
@@ -66,6 +56,19 @@
             </div>
         </div>
     </div>
+
+    {% else %}
+
+    <div class="row my-3">
+        <div class="col-12 text-center">
+            If you are not logged in, please
+            <a href="{% url 'account_signup' %}">signup</a>
+            /
+            <a href="{% url 'account_login' %}">login</a>
+            first.
+        </div>
+    </div>
+    
     {% endif %}
 </div>
 
