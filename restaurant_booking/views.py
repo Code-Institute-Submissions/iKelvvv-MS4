@@ -48,7 +48,7 @@ class CreateProfile(View):
 
 
 class EditProfile(TemplateView):
-    template_name = "/edit_profile.html"
+    template_name = "edit_profile.html"
 
 
 class ManageBooking(generic.ListView): 
