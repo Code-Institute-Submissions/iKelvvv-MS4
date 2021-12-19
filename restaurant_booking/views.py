@@ -89,6 +89,7 @@ class EditBooking(View):
         booking_details_form = UpdateBookingDetails(request.POST, instance=booking)
 
         if booking_details_form.is_valid():
+            booking.status = 0
             booking_updates = booking_details_form.save()
         else:
             booking_details_form = UpdateBookingDetails(instance=booking)
