@@ -19,6 +19,15 @@ class Booking(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     guest_count = models.IntegerField()
     status = models.IntegerField(choices=STATUS, default=0)
-
+    
     class Meta:
         ordering = ['-booking_date']
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    first_name = models.CharField(max_length=150)
+    last_name = models.CharField(max_length=150)
+    phone_number = models.CharField(max_length=11)
+
+    def __str__(self):
+        return str(self.user)

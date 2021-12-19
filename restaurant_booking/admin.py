@@ -1,6 +1,6 @@
 from django.contrib import admin
 # Import Booking model from models.py
-from .models import Booking
+from .models import Booking, UserProfile
 
 # Register your models here.
 # admin.site.register(Booking)
@@ -17,3 +17,5 @@ class BookingAdmin(admin.ModelAdmin):
 
     def approve_booking(self, request, queryset):
         queryset.update(approve_booking=True)
+
+admin.site.register(UserProfile)
