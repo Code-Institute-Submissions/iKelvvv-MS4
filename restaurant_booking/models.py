@@ -23,6 +23,7 @@ class Booking(models.Model):
     class Meta:
         ordering = ['-booking_date']
 
+
 class UserProfile(models.Model):
     user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=150)
