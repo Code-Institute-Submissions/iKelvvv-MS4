@@ -2,10 +2,10 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect
 # Import Django generic libary
 from django.views import generic, View
-from django.views.generic import TemplateView, DetailView
+from django.views.generic import TemplateView, DetailView, UpdateView, DeleteView
 # Import Booking model from models
 from .models import Booking, UserProfile
-from .forms import UpdateBookingDetails
+from .forms import UpdateBookingDetails, EditProfileForm
 from django.shortcuts import redirect
 
 # Create your views here.
@@ -47,8 +47,39 @@ class CreateProfile(View):
         return redirect(reverse('home'))
 
 
-class EditProfile(TemplateView):
+class EditProfile(UpdateView):
     template_name = "edit_profile.html"
+
+    def get(self, request, *args, **kwargs):
+        form = EditProfileForm
+
+        return render(
+            request,
+            "edit_profile.html",
+            {
+                "form": form,
+                "updated": False,
+            }
+        )
+
+    def post(self, request, *args, **kwargs):
+        users_profile = UserProfile.user
+
+        update_profile = EditProfileForm(request.POST, instance=users_profile)
+
+        if update_profile.is_valid():
+            profile_updates = update_profile.save()
+        else:
+            update_profile = EditProfileForm(instance=users_profile)
+
+        return render(
+            request,
+            "edit_profile.html",
+            {
+                "form": form,
+                "updated": False,
+            },
+        )
 
 
 class ManageBooking(generic.ListView): 
@@ -129,3 +160,4 @@ class EditBooking(View):
                 "Update_BookingDetails": booking_details_form,
             },
         )
+        
