@@ -34,6 +34,9 @@ A live website can be found [here]().
 
 [Go to the top](#table-of-contents)
 
+As a big foodie, I have always enjoyed going out to different restuarants to try new cuisines. The simplest way is to book a table at restaurants. The booking system is best when its simple to use and asks for the necessary information.
+
+This project will showcase simplicity and ease to booking a table, update a booking, create a personal profile and to update a profile.
 
 
 <a name="strategy"></a>
@@ -43,16 +46,45 @@ A live website can be found [here]().
 [Go to the top](#table-of-contents)
 
 ### Project Goals
-
+The main goal of this project is to allow the user to sign up, sign in/out, create/update a user profile and to create/update/delete a table booking in a simple and effective process.
 
 ### User Goals:
+First Time Visitor Goals
+-   As a first-time visitor, I want to book a table at my chosen date and time.
+-   As a first-time visitor, I want to view the menu for the restaurant, so that i can make a decision to book a table or not.
+-   As a first-time visitor, I want to be able to get the contact details of the restaurant with ease.
 
+Returning Visitor Goals
+-   As a Returning Visitor, I want to update my booking details.
+-   As a Returning Visitor, I want to cancel a booking i have already made.
+-   As a Returning Visitor, I want to edit my profile for any future bookings.
+
+Frequent User Goals
+-   As a Frequent User, I want to check to see if there are any new food items on the menu.
 
 ### User Expectations:
+The system should have a simple user interface, with the navigation to each section clear and concise.
 
+-   The menu is clear to read.
+-   The user interface is easy to navigate.
+-   The website is responsive on all devices.
+-   To have the ability to contact the restaurant for any enquiries.
 
 ### Strategy Table
+Opportunity/Problem/Feature| Importance| Viability/Feasibility
+------------ | -------------------------|---------
+Display a food Menu | 5 | 5
+Account signup | 5 | 5
+User profile | 5 | 5
+Responsive design | 5 | 5
+Contact me form | 4 | 5
+Ability to create a booking | 5 | 4
+Ability to update a booking | 5 | 4
+Ability to cancel a booking | 3 | 4
+Multiple Table Occupancies | 4 | 1
+Avoid double bookings | 4 | 1
 
+Total | 45 | 39
 
 ## Scope
 
