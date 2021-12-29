@@ -36,35 +36,37 @@
     </div>
 
 
-    <div class="w-75 mx-auto py-5">
-        <form class="row g-3" method="post">
-            {% csrf_token %}
-            
-            {{ Edit_ProfileForm | crispy }}
-            <!-- <div class="col-6">
-                <label for="f_name">First Name</label>
-                <input type="text" class="form-control" id="f_name" name="f_name">
-            </div>
-    
-            <div class="col-6">
-                <label for="l_name">Last Name</label>
-                <input type="text" class="form-control" id="l_name" name="l_name">
-            </div>
-    
-            <div class="col-6 mx-auto">
-                <label for="phone_number">Telephone Number</label>
-                <input type="tel" class="form-control" id="phone_number" name="phone_number" minlength="11" maxlength="11">
-            </div>
-     -->
-            <div class="col-12 text-center">
-                <button type="submit" value="Update" class="btn custom-red text-white">Update Profile</button>
-            </div>
-        </form>
-    </div>
+        <div class="row my-3">
+            <div class="col-12">
+                {% if updated %}
+                <div class="alert alert-success" role="alert">
+                    You have successfully updated your profile.
+                </div>
+                {% else %}
 
-    {% else %}
-    Please login to edit your profile
+                {% if user.is_authenticated %}
 
-    {% endif %}
+                <div class="w-75 mx-auto py-5">
+                    <form class="row g-3" method="post">
+                        {% csrf_token %}
 
-    {% endblock %}
+                        {{ Edit_ProfileForm | crispy }}
+
+                        <div class="col-12 text-center">
+                            <button type="submit" value="Update" class="btn custom-red text-white">Update
+                                Profile</button>
+                        </div>
+                    </form>
+                </div>
+                {% endif %}
+                {% endif %}
+
+
+                {% else %}
+                Please login to edit your profile
+
+                {% endif %}
+
+                {% endblock %}
+            </div>
+        </div>
