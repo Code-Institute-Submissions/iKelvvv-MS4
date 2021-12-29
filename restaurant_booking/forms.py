@@ -6,7 +6,8 @@ from django.forms import ModelForm
 class UpdateBookingDetails(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ('booking_date', 'booking_time', 'guest_count', 'booking_comments',)
+        fields = (
+            'booking_date', 'booking_time', 'guest_count', 'booking_comments')
 
 
 class EditProfileForm(forms.ModelForm):

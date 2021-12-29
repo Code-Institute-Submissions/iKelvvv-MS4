@@ -2,20 +2,22 @@ from django.contrib import admin
 # Import Booking model from models.py
 from .models import Booking, UserProfile
 
-# Register your models here.
-# admin.site.register(Booking)
-# list_filter = ('status', 'booking_time', 'booking_date')
-
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     list_filter = ('status', 'booking_time', 'booking_date')
     readonly_fields = ('booking_id',)
-    list_display = ('booking_id', 'user', 'booking_date', 'booking_time', 'guest_count', 'status', 'created_on')
+    list_display = (
+        'booking_id', 'user', 'booking_date', 'booking_time', 'guest_count',
+        'status', 'created_on')
     search_fields = ('booking_id', 'user')
     actions = ['approve_booking']
 
-    def approve_booking(self, request, queryset):
+    def approve_booking(self, queryset):
         queryset.update(approve_booking=True)
 
-admin.site.register(UserProfile)
+
+@admin.register(UserProfile)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'first_name', 'last_name', 'phone_number')
+    search_fields = ('user', 'phone_number')

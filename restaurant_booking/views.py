@@ -86,13 +86,13 @@ class EditProfile(View):
         )
 
 
-class ManageBooking(generic.ListView): 
+class ManageBooking(generic.ListView):
     model = Booking
     queryset = Booking.objects.all()
     template_name = "manage_booking.html"
     paginate_by = 6
 
-    def get_queryset(self): 
+    def get_queryset(self):
         return Booking.objects.filter(user_id=self.request.user)
 
 
@@ -145,7 +145,8 @@ class EditBooking(View):
     def post(self, request, booking_id, *args, **kwargs):
         booking = get_object_or_404(Booking, pk=booking_id)
 
-        booking_details_form = UpdateBookingDetails(request.POST, instance=booking)
+        booking_details_form = UpdateBookingDetails(
+            request.POST, instance=booking)
 
         if booking_details_form.is_valid():
             booking.status = 0
