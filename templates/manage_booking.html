@@ -34,10 +34,17 @@
                             Booking Requested
                             {% endif %}</td>
                         </td>
+                    </tr>
+                    <tr>
                         <td>
                             <a href="{% url 'edit_booking' booking.booking_id %}">
                                 <button class="btn custom-red text-white" type="submit">
                                     Change Booking Details
+                                </button>
+                            </a>
+                            <a href="{% url 'delete_booking' booking.booking_id %}">
+                                <button class="btn custom-red text-white" type="submit">
+                                    Cancel Booking
                                 </button>
                             </a>
                         </td>
