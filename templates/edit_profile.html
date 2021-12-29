@@ -36,37 +36,37 @@
     </div>
 
 
-        <div class="row my-3">
-            <div class="col-12">
-                {% if updated %}
-                <div class="alert alert-success" role="alert">
-                    You have successfully updated your profile.
-                </div>
-                {% else %}
-
-                {% if user.is_authenticated %}
-
-                <div class="w-75 mx-auto py-5">
-                    <form class="row g-3" method="post">
-                        {% csrf_token %}
-
-                        {{ Edit_ProfileForm | crispy }}
-
-                        <div class="col-12 text-center">
-                            <button type="submit" value="Update" class="btn custom-red text-white">Update
-                                Profile</button>
-                        </div>
-                    </form>
-                </div>
-                {% endif %}
-                {% endif %}
-
-
-                {% else %}
-                Please login to edit your profile
-
-                {% endif %}
-
-                {% endblock %}
+    <div class="row my-3">
+        <div class="col-12">
+            {% if updated %}
+            <div class="alert alert-success" role="alert">
+                You have successfully updated your profile.
             </div>
+            {% else %}
+
+            {% if user.is_authenticated %}
+
+            <div class="w-75 mx-auto py-5">
+                <form class="row g-3" method="post">
+                    {% csrf_token %}
+
+                    {{ Edit_ProfileForm | crispy }}
+
+                    <div class="col-12 text-center">
+                        <button type="submit" value="Update" class="btn custom-red text-white">Update
+                            Profile</button>
+                    </div>
+                </form>
+            </div>
+            {% endif %}
+            {% endif %}
+
+
+            {% else %}
+            Please login to edit your profile
+
+            {% endif %}
+
+            {% endblock %}
         </div>
+    </div>
