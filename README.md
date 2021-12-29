@@ -77,18 +77,31 @@ Display a food Menu | 5 | 5
 Account signup | 5 | 5
 User profile | 5 | 5
 Responsive design | 5 | 5
-Contact me form | 4 | 5
+Contact form | 4 | 5
 Ability to create a booking | 5 | 4
 Ability to update a booking | 5 | 4
 Ability to cancel a booking | 3 | 4
-Multiple Table Occupancies | 4 | 1
+Multiple table occupancies | 4 | 1
 Avoid double bookings | 4 | 1
 
 Total | 45 | 39
 
 ## Scope
+As I am unable to include all of the features from the strategy table. I will phase this project in multiple phases. Phase 1 will be what I have identified as a minimum viable product. Please find below the plans I have for each phase.
 
+### Phase 1
+- Display a food menu
+- Allow users to register for an account
+- Allow users to create and edit a personal profile
+- Responsive design
+- Contact form
+- Ability to create a booking
+- Ability to update a booking
+- Ability to cancel a booking
 
+### Phase 2
+- Multiple table occupancies
+- Avoid double bookings
 
 <a name="structure"></a>
 
