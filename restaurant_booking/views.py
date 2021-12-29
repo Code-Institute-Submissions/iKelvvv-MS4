@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 # Import Django generic libary
 from django.views import generic, View
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, DeleteView
+from django.urls import reverse_lazy
 # Import Booking model from models
 from .models import Booking, UserProfile
 from .forms import UpdateBookingDetails, EditProfileForm
@@ -161,3 +162,10 @@ class EditBooking(View):
                 "Update_BookingDetails": booking_details_form,
             },
         )
+
+
+class DeleteBooking(DeleteView):
+    model = Booking
+    pk_url_kwarg = "booking_id"
+    success_url = reverse_lazy("manage_booking")
+    template_name = "delete_booking.html"
