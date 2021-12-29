@@ -1,14 +1,12 @@
-from django.shortcuts import render, get_object_or_404, reverse
-from django.http import HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 # Import Django generic libary
 from django.views import generic, View
-from django.views.generic import TemplateView, DetailView, UpdateView, DeleteView
+from django.views.generic import TemplateView
 # Import Booking model from models
 from .models import Booking, UserProfile
 from .forms import UpdateBookingDetails, EditProfileForm
-from django.shortcuts import redirect
 
-# Create your views here.
+
 class HomeView(TemplateView):
     template_name = "index.html"
 
@@ -23,7 +21,7 @@ class ContactView(TemplateView):
 
 class CreateProfile(View):
     template_name = "create_profile.html"
-    
+
     def get(self, request, *args, **kwargs):
         return render(
             request,
@@ -47,37 +45,42 @@ class CreateProfile(View):
         return redirect(reverse('home'))
 
 
-class EditProfile(UpdateView):
+class EditProfile(View):
+    model = UserProfile
     template_name = "edit_profile.html"
+    context_object_name = 'edit_profile'
 
-    def get(self, request, *args, **kwargs):
-        form = EditProfileForm
+    def get(self, request, user, *args, **kwargs):
+
+        profile = UserProfile.objects.get(user=user)
 
         return render(
             request,
             "edit_profile.html",
             {
-                "form": form,
+                "profile": profile,
                 "updated": False,
-            }
+                "Edit_ProfileForm": EditProfileForm,
+            },
         )
 
-    def post(self, request, *args, **kwargs):
-        users_profile = UserProfile.user
+    def post(self, request, user, *args, **kwargs):
+        profile = UserProfile.objects.get(user=user)
 
-        update_profile = EditProfileForm(request.POST, instance=users_profile)
+        edit_profile_form = EditProfileForm(request.POST, instance=profile)
 
-        if update_profile.is_valid():
-            profile_updates = update_profile.save()
+        if edit_profile_form.is_valid():
+            profile_updates = edit_profile_form.save()
         else:
-            update_profile = EditProfileForm(instance=users_profile)
+            edit_profile_form = EditProfileForm(instance=profile)
 
         return render(
             request,
             "edit_profile.html",
             {
-                "form": form,
-                "updated": False,
+                "profile": profile,
+                'updated': True,
+                "Edit_ProfileForm": edit_profile_form,
             },
         )
 
@@ -122,12 +125,10 @@ class OnlineBookingView(View):
 
 class EditBooking(View):
     model = Booking
-    # queryset = Booking.objects.all()
     template_name = "edit_booking.html"
     context_object_name = 'edit_booking'
 
     def get(self, request, booking_id, *args, **kwargs):
-        # queryset = Booking.objects.all()
         booking = get_object_or_404(Booking, pk=booking_id)
 
         return render(
@@ -160,4 +161,3 @@ class EditBooking(View):
                 "Update_BookingDetails": booking_details_form,
             },
         )
-        
