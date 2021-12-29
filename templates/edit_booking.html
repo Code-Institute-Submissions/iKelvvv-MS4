@@ -82,8 +82,8 @@
             {% if user.is_authenticated %}
 
             <form method="post">
-                {{ Update_BookingDetails | crispy }}
                 {% csrf_token %}
+                {{ Update_BookingDetails | crispy }}
                 <button type="submit" class="btn custom-red text-white">Submit Changes</button>
             </form>
             {% endif %}
