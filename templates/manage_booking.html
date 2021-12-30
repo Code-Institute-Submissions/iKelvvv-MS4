@@ -10,45 +10,38 @@
     </div>
 
     {% for booking in booking_list %}
-    <div class="row">
+    <div class="row py-5">
         <div class="col-12">
-            <table class="table text-white text-center mt-5">
-                <thead>
-                    <tr>
-                        <th scope="col">Booking Reference:</th>
-                        <th scope="col">Booking Date:</th>
-                        <th scope="col">Booking Time:</th>
-                        <th scope="col">Guest Count:</th>
-                        <th scope="col">Booking Status:</th>
-                        <th scope="col">Actions:</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{{ booking.booking_id }}</td>
-                        <td>{{ booking.booking_date }}</td>
-                        <td>{{ booking.booking_time }}</td>
-                        <td>{{ booking.guest_count }}</td>
-                        <td> {% if booking.status == 1 %}
-                            Booking Accepted
-                            {% else %}
-                            Booking Requested
-                            {% endif %}
-                        </td>
-                        <td>
-                            <a href="{% url 'edit_booking' booking.booking_id %}" class="btn custom-red text-white">
-                                Change Booking Details
-                            </a>
-                            <a href="{% url 'delete_booking' booking.booking_id %}" class="btn custom-red text-white">
-                                Cancel Booking
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="card bg-dark">
+                <div class="card-body ">
+                    <h5 class="card-title">Booking Reference: {{ booking.booking_id }}</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-dark text-white">Booking Date: {{ booking.booking_date }}</li>
+                    <li class="list-group-item bg-dark text-white">Booking Time: {{ booking.booking_time }}</li>
+                    <li class="list-group-item bg-dark text-white">Guest Count: {{ booking.guest_count }}</li>
+                    <li class="list-group-item bg-dark text-white">
+                        Booking Status: {% if booking.status == 1 %}
+                        Booking Accepted
+                        {% else %}
+                        Booking Requested
+                        {% endif %}
+                    </li>
+                </ul>
+                <div class="card-body d-flex">
+                    <a href="{% url 'edit_booking' booking.booking_id %}" class="card-link btn custom-red text-white">
+                        Change Booking Details
+                    </a>
+                    <a href="{% url 'delete_booking' booking.booking_id %}" class="card-link btn custom-red text-white">
+                        Cancel Booking
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-
     {% endfor %}
 
 </div>
