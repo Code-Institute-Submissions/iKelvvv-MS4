@@ -19,6 +19,10 @@ body {
     font-size: 200%;
 }
 
+.fit-width {
+    width: fit-content;
+}
+
 /* Navigation bar */
 
 .active_page {

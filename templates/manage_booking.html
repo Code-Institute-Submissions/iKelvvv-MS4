@@ -8,6 +8,7 @@
             <h2 class="text-center text-decoration-underline py-3">Manage my Bookings</h2>
         </div>
     </div>
+
     {% for booking in booking_list %}
     <div class="row">
         <div class="col-12">
@@ -19,7 +20,7 @@
                         <th scope="col">Booking Time:</th>
                         <th scope="col">Guest Count:</th>
                         <th scope="col">Booking Status:</th>
-                        <th scope="col"></th>
+                        <th scope="col">Actions:</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,18 +35,12 @@
                             Booking Requested
                             {% endif %}
                         </td>
-                    </tr>
-                    <tr>
                         <td>
-                            <a href="{% url 'edit_booking' booking.booking_id %}">
-                                <button class="btn custom-red text-white" type="submit">
-                                    Change Booking Details
-                                </button>
+                            <a href="{% url 'edit_booking' booking.booking_id %}" class="btn custom-red text-white">
+                                Change Booking Details
                             </a>
-                            <a href="{% url 'delete_booking' booking.booking_id %}">
-                                <button class="btn custom-red text-white" type="submit">
-                                    Cancel Booking
-                                </button>
+                            <a href="{% url 'delete_booking' booking.booking_id %}" class="btn custom-red text-white">
+                                Cancel Booking
                             </a>
                         </td>
                     </tr>
