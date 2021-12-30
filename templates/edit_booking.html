@@ -7,7 +7,7 @@
 <div class="container text-center custom-red mt-5">
     <div class="row my-3">
         <div class="col-12">
-            <h1>Booking Details</h1>
+            <h2 class="text-decoration-underline">Booking Details</h2>
         </div>
     </div>
     <div class="row my-3">
@@ -70,7 +70,7 @@
 </div>
 
 
-<div class="container text-center custom-red mt-5">
+<div class="container text-center mt-5">
     <div class="row my-3">
         <div class="col-12">
             {% if updated %}
@@ -83,8 +83,10 @@
 
             <form method="post">
                 {% csrf_token %}
+
                 {{ Update_BookingDetails | crispy }}
-                <button type="submit" class="btn custom-red text-white">Submit Changes</button>
+                
+                <button type="submit" class="btn custom-red text-white my-3">Submit Changes</button>
             </form>
             {% endif %}
             {% endif %}

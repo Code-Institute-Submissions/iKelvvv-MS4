@@ -7,34 +7,36 @@
 
 {% if user.is_authenticated %}
 <div class="container">
-    <div class="row text-center my-5">
-        <h1>Edit Profile</h1>
-    </div>
-    <div class="row text-center">
-        <div class="col-6">
-            <h4>First Name:</h4>
+    <div class="custom-red py-3 my-5">
+        <div class="row text-center">
+            <h2 class="text-decoration-underline">Edit Profile</h2>
         </div>
-        <div class="col-6">
-            <p class="d-inline">{{ user.userprofile.first_name }}</p>
-        </div>
-    </div>
-    <div class="row text-center">
-        <div class="col-6">
-            <h4>Last Name:</h4>
-        </div>
-        <div class="col-6">
-            <p>{{ user.userprofile.last_name }}</p>
-        </div>
-    </div>
-    <div class="row text-center">
-        <div class="col-6">
-            <h4>Telephone Number:</h4>
-        </div>
-        <div class="col-6">
-            <p>{{ user.userprofile.phone_number}}</p>
-        </div>
-    </div>
 
+        <div class="row text-center">
+            <div class="col-6">
+                <h4>First Name:</h4>
+            </div>
+            <div class="col-6">
+                <p class="d-inline">{{ user.userprofile.first_name }}</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-6">
+                <h4>Last Name:</h4>
+            </div>
+            <div class="col-6">
+                <p>{{ user.userprofile.last_name }}</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-6">
+                <h4>Telephone Number:</h4>
+            </div>
+            <div class="col-6">
+                <p>{{ user.userprofile.phone_number}}</p>
+            </div>
+        </div>
+    </div>
 
     <div class="row my-3">
         <div class="col-12">
