@@ -2,11 +2,11 @@
 
 {% block content %}
 
-
 <div class="container">
     <div class="row">
         <div class="col-12">
             <h2 class="text-center text-decoration-underline py-3">Make a Reservation</h2>
+            <p class="text-center">Tues, Weds, Thurs, Fri, Sat, Sun, 2pm-11pm</p>
         </div>
     </div>
 
@@ -22,7 +22,7 @@
 
             <div class="col-6">
                 <label for="time">Select a time:</label>
-                <input type="time" class="form-control" id="time" name="time">
+                <input type="time" class="form-control" id="time" name="time" min="14:00" max="23:00">
             </div>
 
             <div class="col-6 mx-auto">
@@ -44,14 +44,12 @@
         <div class="container">
             <div class="row w-75 mx-auto">
                 <div class="col-6">
-                    <button type="button" class="btn btn-danger mx-auto mt-5 d-block">
-                        <a class="nav-link text-white" href="{% url 'edit_profile' request.user.id %}">Edit Profile</a>
-                    </button>
+                    <a class="nav-link text-white btn btn-danger mx-auto mt-5 d-block"
+                        href="{% url 'edit_profile' request.user.id %}">Edit Profile</a>
                 </div>
                 <div class="col-6">
-                    <button type="button" class="btn btn-danger mx-auto mt-5 d-block">
-                        <a class="nav-link text-white" href="{% url 'manage_booking' %}">My Bookings</a>
-                    </button>
+                    <a class="nav-link text-white btn btn-danger mx-auto mt-5 d-block"
+                        href="{% url 'manage_booking' %}">My Bookings</a>
                 </div>
             </div>
         </div>
@@ -71,6 +69,5 @@
 
     {% endif %}
 </div>
-
 
 {% endblock %}
