@@ -15,22 +15,22 @@
         <form class="row g-3" method="POST">
             {% csrf_token %}
 
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <label for="date">Select a Date:</label>
                 <input type="date" class="form-control" id="date" name="date">
             </div>
 
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <label for="time">Select a time:</label>
                 <input type="time" class="form-control" id="time" name="time" min="14:00" max="23:00">
             </div>
 
-            <div class="col-6 mx-auto">
+            <div class="col-md-6 col-12">
                 <label for="guest_count">Number of guests:</label>
                 <input type="number" class="form-control" id="guest_count" name="guest_count" min="1" max="10">
             </div>
 
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <label for="date">Allergy Information:</label>
                 <input type="text" class="form-control" id="comments" name="comments">
             </div>
@@ -43,11 +43,11 @@
 
         <div class="container">
             <div class="row w-75 mx-auto">
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <a class="nav-link text-white btn btn-danger mx-auto mt-5 d-block"
                         href="{% url 'edit_profile' request.user.id %}">Edit Profile</a>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <a class="nav-link text-white btn btn-danger mx-auto mt-5 d-block"
                         href="{% url 'manage_booking' %}">My Bookings</a>
                 </div>
