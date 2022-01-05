@@ -11,18 +11,45 @@ from .forms import UpdateBookingDetails, EditProfileForm
 class HomeView(TemplateView):
     template_name = "index.html"
 
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "index.html",
+            {
+                "home_active": "custom-red",
+            }
+        )
+
 
 class MenuView(TemplateView):
     template_name = "menu.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "menu.html",
+            {
+                "menu_active": "custom-red",
+            }
+        )
 
 
 class ContactView(TemplateView):
     template_name = "contact.html"
 
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "contact.html",
+            {
+                "contact_active": "custom-red",
+            }
+        )
+
 
 class CreateProfile(View):
     template_name = "create_profile.html"
-
+    
     def get(self, request, *args, **kwargs):
         return render(
             request,
@@ -52,8 +79,9 @@ class EditProfile(View):
     context_object_name = 'edit_profile'
 
     def get(self, request, user, *args, **kwargs):
-
-        profile = UserProfile.objects.get(user=user)
+        profile = UserProfile.objects.filter(user=user).first()
+        if profile is None:
+            return redirect(reverse('create_profile'))
 
         return render(
             request,
@@ -62,6 +90,7 @@ class EditProfile(View):
                 "profile": profile,
                 "updated": False,
                 "Edit_ProfileForm": EditProfileForm,
+                "edit_profile_active": "custom-red",
             },
         )
 
@@ -103,6 +132,9 @@ class OnlineBookingView(View):
         return render(
             request,
             "online_booking.html",
+            {
+                "online_booking_active": "custom-red",
+            }
         )
 
     def post(self, request):
