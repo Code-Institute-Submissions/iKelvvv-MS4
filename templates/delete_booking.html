@@ -7,14 +7,12 @@
     <form action="." method="POST">
         {% csrf_token %}
 
-        <h1>Do you want to cancel the booking "{{ booking.booking_id }}"?</h1>
+        <h3>Do you want to cancel the booking "{{ booking.booking_id }}"?</h3>
 
         <button class="btn custom-red text-white" type="submit">Yes</button>
 
-        <a href="{% url 'manage_booking' %}">
-            <button class="btn custom-red text-white" type="submit">
-                    Cancel
-            </button>
+        <a class="btn custom-red text-white" href="{% url 'manage_booking' %}">
+            Cancel
         </a>
 
     </form>
