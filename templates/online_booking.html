@@ -17,27 +17,27 @@
 
             <div class="col-md-6 col-12">
                 <label for="full_name">Full Name:</label>
-                <input type="text" class="form-control" id="full_name" name="full_name" value="{{ user.userprofile.first_name }} {{ user.userprofile.last_name }}">
+                <input type="text" class="form-control" id="full_name" name="full_name" value="{{ user.userprofile.first_name }} {{ user.userprofile.last_name }}" required>
             </div>
 
             <div class="col-md-6 col-12">
                 <label for="phone_number">Contact Telephone Number:</label>
-                <input type="tel" class="form-control" id="phone_number" name="phone_number" value="{{ user.userprofile.phone_number}}" minlength="11" maxlength="11">
+                <input type="tel" class="form-control" id="phone_number" name="phone_number" value="{{ user.userprofile.phone_number}}" minlength="11" maxlength="11" required>
             </div>
 
             <div class="col-md-6 col-12">
                 <label for="date">Select a Date:</label>
-                <input type="date" class="form-control" id="date" name="date">
+                <input type="date" class="form-control" id="date" name="date" required>
             </div>
 
             <div class="col-md-6 col-12">
                 <label for="time">Select a time:</label>
-                <input type="time" class="form-control" id="time" name="time" min="14:00" max="23:00">
+                <input type="time" class="form-control" id="time" name="time" min="14:00" max="23:00" required>
             </div>
 
             <div class="col-md-6 col-12">
                 <label for="guest_count">Number of guests:</label>
-                <input type="number" class="form-control" id="guest_count" name="guest_count" min="1" max="10">
+                <input type="number" class="form-control" id="guest_count" name="guest_count" min="1" max="10" required>
             </div>
 
             <div class="col-md-6 col-12">
