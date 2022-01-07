@@ -47,6 +47,14 @@ footer i {
     color: #BD3C31
 }
 
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
 .btn-danger {
     background-color: #BD3C31;
 }
