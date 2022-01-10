@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Roboto+Condensed&display=swap');
+
 /* Global style */
 * {
     margin: 0;
@@ -6,8 +8,9 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .custom-red {
@@ -36,7 +39,7 @@ body {
 /* Modify booking details modal */
 .booking_changes {
     background-color:#212529;
-    color: white;
+    color: #fff;
 }
   
 /* Footer */
