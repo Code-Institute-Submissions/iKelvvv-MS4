@@ -190,7 +190,15 @@ Manage Booking Page Mobile:
 
 [Go to the top](#table-of-contents)
 
+### Colours
 
+Please find the colours schemes that I used [here](https://coolors.co/bd3c31-000000-ffffff-212529).
+
+### Typography
+
+I decided to use Be Vietnam Pro as my font of choice with sans serif as my backup font for browsers that might not support Be Vietnam Pro.
+
+The link to the font can be found [here](https://fonts.google.com/share?selection.family=Be%20Vietnam%20Pro).
 
 <a name="features"></a>
 
