@@ -109,15 +109,18 @@ As I am unable to include all of the features from the strategy table. I will ph
 
 [Go to the top](#table-of-contents)
 
+It is really important to include responsive design in this project as many users are using different devices (mobile, tablet, laptop/PC). This gives the user the best experience on their device.
 
+Responsive on all device sizes
+Easy navigation through labelled buttons
+Footer at the bottom of the index page that links to the social media website.
+All elements will be consistent including font size, font family, colour scheme.
 
 <a name="skeleton"></a>
 
 ## 1.3. Skeleton
 
 [Go to the top](#table-of-contents)
-
-
 
 ### Wire-frames
 Home/Landing Page Desktop:
