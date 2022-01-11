@@ -16,6 +16,7 @@
             <div class="col-6">
                 <h4>First Name:</h4>
             </div>
+
             <div class="col-6">
                 <p class="d-inline">{{ user.userprofile.first_name }}</p>
             </div>
@@ -25,15 +26,17 @@
             <div class="col-6">
                 <h4>Last Name:</h4>
             </div>
+
             <div class="col-6">
                 <p>{{ user.userprofile.last_name }}</p>
             </div>
         </div>
-        
+
         <div class="row text-center">
             <div class="col-6">
                 <h4>Telephone Number:</h4>
             </div>
+
             <div class="col-6">
                 <p>{{ user.userprofile.phone_number}}</p>
             </div>
@@ -46,6 +49,7 @@
             <div class="alert alert-success" role="alert">
                 You have successfully updated your profile.
             </div>
+
             {% else %}
 
             {% if user.is_authenticated %}
@@ -64,10 +68,11 @@
                 </form>
             </div>
             {% endif %}
+
             {% endif %}
 
-
             {% else %}
+            
             Please login to edit your profile
 
             {% endif %}

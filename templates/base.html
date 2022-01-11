@@ -18,7 +18,9 @@
 <body class="d-flex flex-column h-100">
     <!-- Background animation-->
     <div class="bg"></div>
+
     <div class="bg bg2"></div>
+
     <div class="bg bg3"></div>
 
     <!-- Navigation -->
@@ -29,42 +31,54 @@
                 <img src="https://res.cloudinary.com/ddwgmv42x/image/upload/v1638813446/Top_Chef-logos_copy_klliee.jpg"
                     alt="restaurant_logo" width="140" height="70">
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     {% if user.is_authenticated %}
                     <li class="nav-item px-2">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
+
                     <li class="nav-item px-2">
                         <a class="nav-link {{ edit_profile_active }}"
                             href="{% url 'edit_profile' request.user.id %}">Edit Profile</a>
                     </li>
+
                     <li class="nav-item px-2">
                         <a class="nav-link {{ manage_booking_active }}" href="{% url 'manage_booking' %}">Manage
                             Bookings</a>
                     </li>
+
                     {% else %}
+
                     <li class="nav-item px-2">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
+
                     <li class="nav-item px-2">
                         <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
+
                     {% endif %}
+
                     <li class="nav-item px-2">
                         <a class="nav-link {{ home_active }}" href="{% url 'home' %}">Home</a>
                     </li>
+
                     <li class="nav-item px-2">
                         <a class="nav-link {{ menu_active }}" href="{% url 'menu' %}">Menu</a>
                     </li>
+
                     <li class="nav-item px-2">
                         <a class="nav-link {{ contact_active }}" href="{% url 'contact' %}">Contact</a>
                     </li>
+
                     <li class="nav-item px-2">
                         <a class="nav-link {{ online_booking_active }}" href="{% url 'online_booking' %}">Book Now</a>
                     </li>
