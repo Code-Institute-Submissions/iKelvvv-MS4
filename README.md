@@ -183,7 +183,6 @@ Manage Booking Page Desktop:
 Manage Booking Page Mobile:
 ![manage_booking_page_mobile](documentation_assets/wireframes/manage_booking_mobile.png)
 
-
 <a name="surface"></a>
 
 ## 1.4. Surface
@@ -205,6 +204,54 @@ The link to the font can be found [here](https://fonts.google.com/share?selectio
 # 2. Features
 
 [Go to the top](#table-of-contents)
+
+### All Pages
+- The navgiation bar is placed at the top of all pages. The navigation bar is dynamic in that meaning depending on if the user is logged in or not the options will change.
+- If the user is not logged in the navigation bar will look like this:
+![user_not_logged_in](documentation_assets/images/navbar_not_logged_in.png)
+- If the user is logged in the navigation bar will look like this:
+![user_logged_in](documentation_assets/images/navbar_logged_in.png)
+
+- The restaurant logo is also placed at the top of all pages. Clicking on it will also direct the user to the home page.
+- Animated background, to give more of a user experience instead of a plain static background.
+
+### Register Page
+- A simple signup form for that requires the user to enter a unique email address and a password. The password must be entered again for confirmation, this must match the already entered password above.
+- A message to prompt the user that if an account is already been created they can click the sign in hyperlink to be redirected to the sign in page.
+- If the user enters an email address that has already been registered, the user is prompted by a error message.
+![email_validation_error](documentation_assets/images/signup_email_validation.png)
+- If the user enters a password that it not secure, the user will be prompted by a message.
+![password_too_common](documentation_assets/images/password_too_common.png)
+- If the user enters both passwords that do not match, the user is prompted by a message.
+![signup_email_validation](documentation_assets/images/signup_email_validation.png)
+- Once the user has successfully signed up, this will automatically login and direct the user to the create profile page.
+
+### Login Page
+- A login form that requires the user to enter their email address and password that they used when signing up to the site.
+- A message to prompt the user that if an account has not been created they can click the sign up hyperlink to be redirected to the sign up page.
+- If the user enters in the wrong credentials, a message is displayed to the user.
+![signup_email_validation](documentation_assets/images/login_validation.png)
+
+### Logout Page
+- When clicking logout from the navigation bar, the user is redirected to a sign out page to confirm their action.
+
+### Landing Page
+
+### Create Profile Page
+
+### Edit Profile Page
+
+### Menu Page
+
+### Contact Page
+
+### Create Booking Page
+
+### Manage Booking Page
+
+### Edit Booking Page
+
+### Cancel Booking
 
 
 
