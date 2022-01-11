@@ -17,12 +17,14 @@
 
             <div class="col-md-6 col-12">
                 <label for="full_name">Full Name:</label>
-                <input type="text" class="form-control" id="full_name" name="full_name" value="{{ user.userprofile.first_name }} {{ user.userprofile.last_name }}" required>
+                <input type="text" class="form-control" id="full_name" name="full_name"
+                    value="{{ user.userprofile.first_name }} {{ user.userprofile.last_name }}" required>
             </div>
 
             <div class="col-md-6 col-12">
                 <label for="phone_number">Contact Telephone Number:</label>
-                <input type="tel" class="form-control" id="phone_number" name="phone_number" value="{{ user.userprofile.phone_number}}" minlength="11" maxlength="11" required>
+                <input type="tel" class="form-control" id="phone_number" name="phone_number"
+                    value="{{ user.userprofile.phone_number}}" minlength="11" maxlength="11" required>
             </div>
 
             <div class="col-md-6 col-12">
@@ -32,7 +34,8 @@
 
             <div class="col-md-6 col-12">
                 <label for="time">Select a time:</label>
-                <input type="time" class="form-control" id="time" name="time" min="14:00" max="23:00" required>
+                <input type="time" class="form-control" id="time" name="time" min="14:00" max="23:00" value="14:00"
+                    required>
             </div>
 
             <div class="col-md-6 col-12">
@@ -79,5 +82,20 @@
 
     {% endif %}
 </div>
+
+<script>
+    Date.prototype.toDateInputValue = (function () {
+        var local = new Date(this);
+        local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+        return local.toJSON().slice(0, 10);
+    });
+
+    document.getElementById('date').value = new Date().toDateInputValue();
+</script>
+
+<script>
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("date")[0].setAttribute('min', today);
+</script>
 
 {% endblock %}
