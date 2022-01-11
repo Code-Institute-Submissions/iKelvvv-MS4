@@ -236,24 +236,38 @@ The link to the font can be found [here](https://fonts.google.com/share?selectio
 - When clicking logout from the navigation bar, the user is redirected to a sign out page to confirm their action.
 
 ### Landing Page
+- A simple but elegant banner to give the user a sense of the restaurant.
+- A book now button that directs the user to the create a booking page. If the user has not logged in it will prompt the user to register or login first.
+- A short introduction to describe the restaurant.
 
 ### Create Profile Page
+- Once the user has registered they will be redirects to the create profile page. The page displays a form for the user to enter their first name, last name and telephone number.
 
 ### Edit Profile Page
+- The user can navigate to this page by clicking on the edit profile link in the navigation bar. This page will display the current profile details with a form below for the user to update any details.
 
 ### Menu Page
+- The restaurant opening times is displayed at the top of the page.
+- A menu that is displayed in 3 sections by the food category.
 
 ### Contact Page
+- An information section that displays the restaurant telephone number, email address, opening times and address.
+- A contact form that requires the user to enter their full name, email address and a message. The form is aldready pre-filled with the users full name (if the user is logged in and has created a profile).
+- A Google maps iframe of the restaurant location.
 
 ### Create Booking Page
+- A form that requires the user to enter/select the booking details.
+Full name and contact telephone number is prefilled if the user has created a profile.
+The user will then need to select a date, time, number of guests and enter any allergy information if needed.
+- When clicking the make reservation button the booking will then be requested to the restaurant owner for approval.
+- As the restaurant is only open from 2PM, if the user selects a time before that, the form will display an error, prompting the customer to select a later time.
+![booking_time_error](documentation_assets/images/booking_time_error.png)
 
 ### Manage Booking Page
 
 ### Edit Booking Page
 
 ### Cancel Booking
-
-
 
 <a name="technologies-used"></a>
 
