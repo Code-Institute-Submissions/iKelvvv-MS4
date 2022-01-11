@@ -264,10 +264,15 @@ The user will then need to select a date, time, number of guests and enter any a
 ![booking_time_error](documentation_assets/images/booking_time_error.png)
 
 ### Manage Booking Page
+- Displays all user related bookings in a list view within a card.
+- Each card will show a booking reference, booking status, booking date, booking time, guest count. It will also contain a button to change booking details and a cancel booking button.
 
 ### Edit Booking Page
+- This page will display the current booking details with a form below for the user to update any details.
+- When the changes are submitted, the booking will be processed as the booking requested status.
 
 ### Cancel Booking
+- When the user clicks the cancel booking button they will be redirected to a confirmation page.
 
 <a name="technologies-used"></a>
 
@@ -318,8 +323,6 @@ The user will then need to select a date, time, number of guests and enter any a
     - Migrate all new changes to the database
     - Run the server to test
 
-    !!! INSERT TEST SUCCESSFUL IMAGE !!! 
-
 - Setup project to use Cloudinary and PostgreSQL
     - Create new Heroku app
         - Sign into Heroku
@@ -361,6 +364,7 @@ The user will then need to select a date, time, number of guests and enter any a
 
 
 - Deploy new empty project to Heroku
+![initial_heroku_deployment](documentation_assets/images/initial_deployment_successful.png)
 
 <a name="deployment"></a>
 
