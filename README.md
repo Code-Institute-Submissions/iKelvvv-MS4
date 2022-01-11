@@ -5,7 +5,7 @@ Welcome to my fourth project. This project is a simple restaurant booking system
 
 A live website can be found [here]().
 
-![website preview]()
+![website preview](documentation_assets/images/website_preview.png)
 
 # Table of Contents
 
@@ -288,6 +288,8 @@ The user will then need to select a date, time, number of guests and enter any a
     -   The project uses JavaScript.
 -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
     -   The project uses Python.
+-   [Boostrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+    -   The project uses Bootstrap 5.
 -   [Gitpod](https://www.gitpod.io/)
     -   The project uses Gitpod.
 -   [Chrome](https://www.google.com/intl/en_uk/chrome/)
@@ -305,9 +307,9 @@ The user will then need to select a date, time, number of guests and enter any a
 
 [Go to the top](#table-of-contents)
 
+For every element that I added to my HTML, I would add the basic CSS to my stylesheet. I would then use the inspect element to try different styles. Once I've got it to my liking I would try to see if I can implement the styling with bootstrap, if I could not replicate the styling I would copy the CSS from google and paste into my css stylesheet. This allows me to keep track of the code I am using.
 
 ### Google Developer Tools
-
 
 
 ### Responsive Tools
