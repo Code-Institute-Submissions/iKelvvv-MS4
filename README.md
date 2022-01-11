@@ -280,7 +280,24 @@ The user will then need to select a date, time, number of guests and enter any a
 
 [Go to the top](#table-of-contents)
 
-
+-   [HTML5](https://en.wikipedia.org/wiki/HTML)
+    -   The project uses HyperText Markup Language.
+-   [CSS3](https://en.wikipedia.org/wiki/CSS)
+    -   The project uses Cascading Style Sheets.
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    -   The project uses JavaScript.
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+    -   The project uses Python.
+-   [Gitpod](https://www.gitpod.io/)
+    -   The project uses Gitpod.
+-   [Chrome](https://www.google.com/intl/en_uk/chrome/)
+    -   The project uses Chrome to debug and test the source code using HTML5.
+-   [Balsamiq](https://balsamiq.com/)
+    -   Balsamiq was used to create the wireframes during the design process.
+-   [Google Fonts](https://fonts.google.com/)
+    -   Google fonts were used to import the "Benne" font into the style.css file which is used on all pages throughout the project.
+-   [GitHub](https://github.com/)
+    -   GitHub was used to store the project's code after being pushed from Git.
 
 <a name="testing"></a>
 
@@ -361,7 +378,6 @@ The user will then need to select a date, time, number of guests and enter any a
         - Add Heroku host name to allowed hosts
         - Create directories for media, static and templates in project workspace
         - Create a Procfile
-
 
 - Deploy new empty project to Heroku
 ![initial_heroku_deployment](documentation_assets/images/initial_deployment_successful.png)
