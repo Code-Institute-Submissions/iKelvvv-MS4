@@ -1,7 +1,7 @@
 # Restaurant Booking System
 
 ## Introduction
-Welcome to my fourth project. This project is a simple restaurant booking system, allow users to booking a table for this restauarant. This will use languages such as Django, Python, HTML and CSS.
+Welcome to my fourth project. This project is a simple restaurant booking system, allow users to booking a table for this restauarant. This will use languages such as Django, Python, HTML, CSS and JavaScript.
 
 A live website can be found [here]().
 
@@ -259,6 +259,7 @@ The link to the font can be found [here](https://fonts.google.com/share?selectio
 - A form that requires the user to enter/select the booking details.
 Full name and contact telephone number is prefilled if the user has created a profile.
 The user will then need to select a date, time, number of guests and enter any allergy information if needed.
+- The date input field has JavaScript code so the default value is the todays date and that the user cannot select a date that it previous to todays.
 - When clicking the make reservation button the booking will then be requested to the restaurant owner for approval.
 - As the restaurant is only open from 2PM, if the user selects a time before that, the form will display an error, prompting the customer to select a later time.
 ![booking_time_error](documentation_assets/images/booking_time_error.png)
@@ -297,7 +298,7 @@ The user will then need to select a date, time, number of guests and enter any a
 -   [Balsamiq](https://balsamiq.com/)
     -   Balsamiq was used to create the wireframes during the design process.
 -   [Google Fonts](https://fonts.google.com/)
-    -   Google fonts were used to import the "Benne" font into the style.css file which is used on all pages throughout the project.
+    -   Google fonts were used to import the "Be Vietnam Pro" font into the style.css file which is used on all pages throughout the project.
 -   [GitHub](https://github.com/)
     -   GitHub was used to store the project's code after being pushed from Git.
 
@@ -307,19 +308,46 @@ The user will then need to select a date, time, number of guests and enter any a
 
 [Go to the top](#table-of-contents)
 
+### Google Developer Tools
 For every element that I added to my HTML, I would add the basic CSS to my stylesheet. I would then use the inspect element to try different styles. Once I've got it to my liking I would try to see if I can implement the styling with bootstrap, if I could not replicate the styling I would copy the CSS from google and paste into my css stylesheet. This allows me to keep track of the code I am using.
 
-### Google Developer Tools
-
+I also checked the accessibility of the page using lighthouse.
+![google_lighthouse](documentation_assets/images/google_lighthouse.png)
 
 ### Responsive Tools
-
+I used [Am I Responsive](http://ami.responsivedesign.is) to make sure that all my pages are responsive to all devices.
 
 ### W3C Validator Tools
+#### HTML:
+I used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) to check for any errors within the HTML pages.
 
+I had an error on the base.html template:
+![base.html_error](documentation_assets/images/base.html_error.png)
+
+This was then rectified by adding the lang attribute to the current HTML tag and deleting the other one.
+![base.html_fix](documentation_assets/images/base.html_fix.png)
+
+I had an error on the contact.html template:
+![contact.html_error](documentation_assets/images/contact.html_error.png)
+
+This was then rectified by removing the width styling of 100% and replaced it with a class="w-100".
+![contact.html_fix](documentation_assets/images/contact.html_fix.png)
+
+#### CSS:
+I used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to check for any errors within my CSS stylesheet.
+
+I had no errors in my CSS file:
+![css_validation](documentation_assets/images/css_validation.png)
+
+### JavaScript:
+I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScript file.
+
+I had no errors in my JavaScript files:
+![javascript_validation](documentation_assets/images/javascript_validation.png)
+
+### Python:
 
 ## Manual Testing
-
 
 
 <a name="development-cycle"></a>
