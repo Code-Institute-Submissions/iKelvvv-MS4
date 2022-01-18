@@ -211,6 +211,7 @@ The link to the font can be found [here](https://fonts.google.com/share?selectio
 ![user_not_logged_in](documentation_assets/images/navbar_not_logged_in.png)
 - If the user is logged in the navigation bar will look like this:
 ![user_logged_in](documentation_assets/images/navbar_logged_in.png)
+- The footer is placed at the bottom of each page with social media icons. When hovering over them it creates a zoom effect giving the user more of an experience. These icons will open the links in a new tab.
 
 - The restaurant logo is also placed at the top of all pages. Clicking on it will also direct the user to the home page.
 - Animated background, to give more of a user experience instead of a plain static background.
@@ -348,7 +349,37 @@ I had no errors in my JavaScript files:
 ### Python:
 
 ## Manual Testing
+I have tested my site on Safari and google chrome on multiple devices.
 
+These include:
+-   iPhone X
+-   iPhone XS Max
+-   iPad Pro
+-   Macbook Pro
+
+Please find below my testing process for all pages via mobile and web:
+
+### Navigation Bar
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Home page | When clicking the "home" button in the navigation bar, the browser redirects me to the home page. The is active styling will appear as the home button has a red background. | PASS
+Menu page | When clicking the "menu" button in the navigation bar, the browser redirects me to the menu page. The is active styling will appear as the menu button has a red background. | PASS
+Contact page| When clicking the "contact" button in the navigation bar, the browser redirects me to the contact page. The is active styling will appear as the contact button has a red background. | PASS
+Book now page | When clicking the "book now" button in the navigation bar, the browser redirects me to the book now page page. The is active styling will appear as the book now button has a red background.| PASS
+Edit profile page | Checked foreground information is not distracted by backgrounds| PASS
+Register page | When clicking the "register" button in the navigation bar, the browser redirects me to the register page. The user will know they have are on this page by the heading. | PASS
+Login / Logout page | When clicking the "login" or "logout button in the navigation bar, the browser redirects me to the login or logout page. The user will know they have are on this page by the heading. | PASS
+Foreground & background colour | Checked foreground information is not distracted by background animation. | PASS
+Text | Checked that all fonts and colours used are consistent | PASS
+
+### Footer
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Facebook | When clicking Facebook icon, a new tab opens and redirects to the Facebook website. | PASS
+Twitter | When clicking Twitter icon, a new tab opens and redirects to the Twitter website. | PASS
+Instagram | When clicking Instagram icon, a new tab opens and redirects to the instagram website. | PASS
 
 <a name="development-cycle"></a>
 
