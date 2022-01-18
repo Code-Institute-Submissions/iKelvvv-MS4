@@ -423,8 +423,38 @@ If not signed in | Checked to see if the user has not signed in the booking form
 
 ![booking_google_lighthouse](documentation_assets/images/booking_google_lighthouse.png)
 
+### Edit profile page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Edit profile form | Checked the form submits only when all required fields are filled out. | Pass
+If profile is has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | Pass
 
+![edit_profile_google_lighthouse](documentation_assets/images/edit_profile_google_lighthouse.png)
 
+### Register page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Resgister form | Checked the form submits only when all required fields are filled out. | Pass
+Sign in link | Checked the sign in link redirects to the sign in page. | Pass
+
+![signup_google_lighthouse](documentation_assets/images/sign_up_google_lighthouse.png)
+
+### Sign in page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Sign in form | Checked the form submits only when all required fields are filled out. | Pass
+Signup link | Checked the signup link redirects to the signup page. | Pass
+
+![sign_in_google_lighthouse](documentation_assets/images/sign_in_google_lighthouse.png)
 
 <a name="development-cycle"></a>
 
@@ -500,6 +530,11 @@ If not signed in | Checked to see if the user has not signed in the booking form
 # 7. End Product
 
 [Go to the top](#table-of-contents)
+
+Home Page:
+![home_page_desktop_preview](documentation_assets/images/homepage_desktop_preview.png)
+
+![home_page_mobile_preview](documentation_assets/images/homepage_mobile_preview.png)
 
 
 
