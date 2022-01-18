@@ -1,7 +1,7 @@
 # Restaurant Booking System
 
 ## Introduction
-Welcome to my fourth project. This project is a simple restaurant booking system, allow users to booking a table for this restauarant. This will use languages such as Django, Python, HTML, CSS and JavaScript.
+Welcome to my fourth project. This project is a simple restaurant booking system, allow users to book a table for this restaurant. This will use languages such as Django, Python, HTML, CSS and JavaScript.
 
 A live website can be found [here]().
 
@@ -34,10 +34,9 @@ A live website can be found [here]().
 
 [Go to the top](#table-of-contents)
 
-As a big foodie, I have always enjoyed going out to different restuarants to try new cuisines. The simplest way is to book a table at restaurants. The booking system is best when its simple to use and asks for the necessary information.
+As a big foodie, I have always enjoyed going out to different restaurants to try new cuisines. The simplest way is to book a table at a restaurant. The booking system is best when it's simple to use and asks for the necessary information.
 
-This project will showcase simplicity and ease to booking a table, update a booking, create a personal profile and to update a profile.
-
+This project will showcase simplicity and ease to booking a table, update a booking, cancel a booking, create a personal profile and update a profile.
 
 <a name="strategy"></a>
 
@@ -46,17 +45,17 @@ This project will showcase simplicity and ease to booking a table, update a book
 [Go to the top](#table-of-contents)
 
 ### Project Goals
-The main goal of this project is to allow the user to sign up, sign in/out, create/update a user profile and to create/update/delete a table booking in a simple and effective process.
+The main goal of this project is to allow the user to sign up, sign in/out, create/update a user profile and create/update/delete a table booking in a simple and effective process.
 
 ### User Goals:
 First Time Visitor Goals
 -   As a first-time visitor, I want to book a table at my chosen date and time.
--   As a first-time visitor, I want to view the menu for the restaurant, so that i can make a decision to book a table or not.
+-   As a first-time visitor, I want to view the menu for the restaurant, so that I can decide to book a table or not.
 -   As a first-time visitor, I want to be able to get the contact details of the restaurant with ease.
 
 Returning Visitor Goals
 -   As a Returning Visitor, I want to update my booking details.
--   As a Returning Visitor, I want to cancel a booking i have already made.
+-   As a Returning Visitor, I want to cancel a booking I have already made.
 -   As a Returning Visitor, I want to edit my profile for any future bookings.
 
 Frequent User Goals
@@ -209,7 +208,7 @@ The link to the font can be found [here](https://fonts.google.com/share?selectio
 [Go to the top](#table-of-contents)
 
 ### All Pages
-- The navgiation bar is placed at the top of all pages. The navigation bar is dynamic in that meaning depending on if the user is logged in or not the options will change.
+- The navigation bar is placed at the top of all pages. The navigation bar is dynamic in that meaning depending on if the user is logged in or not the options will change.
 - If the user is not logged in the navigation bar will look like this:
 ![user_not_logged_in](documentation_assets/images/navbar_not_logged_in.png)
 - If the user is logged in the navigation bar will look like this:
@@ -220,56 +219,56 @@ The link to the font can be found [here](https://fonts.google.com/share?selectio
 - Animated background, to give more of a user experience instead of a plain static background.
 
 ### Register Page
-- A simple signup form for that requires the user to enter a unique email address and a password. The password must be entered again for confirmation, this must match the already entered password above.
-- A message to prompt the user that if an account is already been created they can click the sign in hyperlink to be redirected to the sign in page.
-- If the user enters an email address that has already been registered, the user is prompted by a error message.
+- A simple signup form that requires the user to enter a unique email address and a password. The password must be entered again for confirmation, this must match the already entered password above.
+- A message to prompt the user that if an account is already been created they can click the sign-in hyperlink to be redirected to the sign-in page.
+- If the user enters an email address that has already been registered, the user is prompted by an error message.
 ![email_validation_error](documentation_assets/images/signup_email_validation.png)
-- If the user enters a password that it not secure, the user will be prompted by a message.
+- If the user enters a password that is not secure, the user will be prompted by a message.
 ![password_too_common](documentation_assets/images/password_too_common.png)
 - If the user enters both passwords that do not match, the user is prompted by a message.
 ![signup_email_validation](documentation_assets/images/signup_email_validation.png)
-- Once the user has successfully signed up, this will automatically login and direct the user to the create profile page.
+- Once the user has successfully signed up, this will automatically log in and direct the user to the create profile page.
 
 ### Login Page
 - A login form that requires the user to enter their email address and password that they used when signing up to the site.
-- A message to prompt the user that if an account has not been created they can click the sign up hyperlink to be redirected to the sign up page.
+- A message to prompt the user that if an account has not been created they can click the signup hyperlink to be redirected to the signup page.
 - If the user enters in the wrong credentials, a message is displayed to the user.
 ![signup_email_validation](documentation_assets/images/login_validation.png)
 
 ### Logout Page
-- When clicking logout from the navigation bar, the user is redirected to a sign out page to confirm their action.
+- When clicking logout from the navigation bar, the user is redirected to a sign-out page to confirm their action.
 
 ### Landing Page
 - A simple but elegant banner to give the user a sense of the restaurant.
-- A book now button that directs the user to the create a booking page. If the user has not logged in it will prompt the user to register or login first.
+- A book now button that directs the user to create a booking page. If the user has not logged in it will prompt the user to register or log in first.
 - A short introduction to describe the restaurant.
 
 ### Create Profile Page
-- Once the user has registered they will be redirects to the create profile page. The page displays a form for the user to enter their first name, last name and telephone number.
+- Once the user has registered they will be redirected to the create profile page. The page displays a form for the user to enter their first name, last name and telephone number.
 
 ### Edit Profile Page
 - The user can navigate to this page by clicking on the edit profile link in the navigation bar. This page will display the current profile details with a form below for the user to update any details.
 
 ### Menu Page
-- The restaurant opening times is displayed at the top of the page.
+- The restaurant opening times are displayed at the top of the page.
 - A menu that is displayed in 3 sections by the food category.
 
 ### Contact Page
 - An information section that displays the restaurant telephone number, email address, opening times and address.
-- A contact form that requires the user to enter their full name, email address and a message. The form is aldready pre-filled with the users full name (if the user is logged in and has created a profile).
+- A contact form that requires the user to enter their full name, email address and a message. The form is already pre-filled with the user's full name (if the user is logged in and has created a profile).
 - A Google maps iframe of the restaurant location.
 
 ### Create Booking Page
 - A form that requires the user to enter/select the booking details.
-Full name and contact telephone number is prefilled if the user has created a profile.
+Full name and contact telephone number are prefilled if the user has created a profile.
 The user will then need to select a date, time, number of guests and enter any allergy information if needed.
-- The date input field has JavaScript code so the default value is the todays date and that the user cannot select a date that it previous to todays.
+- The date input field has JavaScript code so the default value is today's date and the user cannot select a date that is previous to today.
 - When clicking the make reservation button the booking will then be requested to the restaurant owner for approval.
-- As the restaurant is only open from 2PM, if the user selects a time before that, the form will display an error, prompting the customer to select a later time.
+- As the restaurant is only open from 2 PM, if the user selects a time before that, the form will display an error, prompting the customer to select a later time.
 ![booking_time_error](documentation_assets/images/booking_time_error.png)
 
 ### Manage Booking Page
-- Displays all user related bookings in a list view within a card.
+- Displays all user-related bookings in a list view within a card.
 - Each card will show a booking reference, booking status, booking date, booking time, guest count. It will also contain a button to change booking details and a cancel booking button.
 
 ### Edit Booking Page
@@ -313,7 +312,7 @@ The user will then need to select a date, time, number of guests and enter any a
 [Go to the top](#table-of-contents)
 
 ### Google Developer Tools
-For every element that I added to my HTML, I would add the basic CSS to my stylesheet. I would then use the inspect element to try different styles. Once I've got it to my liking I would try to see if I can implement the styling with bootstrap, if I could not replicate the styling I would copy the CSS from google and paste into my css stylesheet. This allows me to keep track of the code I am using.
+For every element that I added to my HTML, I would add the basic CSS to my stylesheet. I would then use the inspect element to try different styles. Once I've got it to my liking I would try to see if I can implement the styling with bootstrap, if I could not replicate the styling I would copy the CSS from google and paste it into my CSS stylesheet. This allows me to keep track of the code I am using.
 
 I also checked the accessibility of the page using lighthouse.
 ![google_lighthouse](documentation_assets/images/google_lighthouse.png)
@@ -334,7 +333,7 @@ This was then rectified by adding the lang attribute to the current HTML tag and
 I had an error on the contact.html template:
 ![contact.html_error](documentation_assets/images/contact.html_error.png)
 
-This was then rectified by removing the width styling of 100% and replaced it with a class="w-100".
+This was then rectified by removing the width styling of 100% and replacing it with a class="w-100".
 ![contact.html_fix](documentation_assets/images/contact.html_fix.png)
 
 #### CSS:
@@ -358,7 +357,7 @@ These include:
 -   iPhone X
 -   iPhone XS Max
 -   iPad Pro
--   Macbook Pro
+-   MacBook Pro
 
 Please find below my testing process for all pages via mobile and web:
 
@@ -370,26 +369,26 @@ TEST            | OUTCOME                          | PASS / FAIL
 Home page | When clicking the "home" button in the navigation bar, the browser redirects me to the home page. The is active styling will appear as the home button has a red background. | PASS
 Menu page | When clicking the "menu" button in the navigation bar, the browser redirects me to the menu page. The is active styling will appear as the menu button has a red background. | PASS
 Contact page | When clicking the "contact" button in the navigation bar, the browser redirects me to the contact page. The is active styling will appear as the contact button has a red background. | PASS
-Book now page | When clicking the "book now" button in the navigation bar, the browser redirects me to the book now page page. The is active styling will appear as the book now button has a red background.| PASS
-Manage booking page | When clicking the "manage bookings" button in the navigation bar, the browser redirects me to the manage booking page page. The user will know they are on this page by the heading. | PASS
+Book now page | When clicking the "book now" button in the navigation bar, the browser redirects me to the book now page. The is active styling will appear as the book now button has a red background.| PASS
+Manage booking page | When clicking the "manage bookings" button in the navigation bar, the browser redirects me to the manage booking page. The user will know they are on this page by the heading. | PASS
 Edit profile page | Checked foreground information is not distracted by backgrounds| PASS
 Register page | When clicking the "register" button in the navigation bar, the browser redirects me to the register page. The user will know they are on this page by the heading. | PASS
-Login / Logout page | When clicking the "login" or "logout button in the navigation bar, the browser redirects me to the login or logout page. The user will know they have are on this page by the heading. | PASS
+Login / Logout page | When clicking the "login" or "logout button in the navigation bar, the browser redirects me to the login or logout page. The user will know they are on this page by the heading. | PASS
 Foreground & background colour | Checked foreground information is not distracted by background animation. | PASS
-Text | Checked that all fonts and colours used are consistent | PASS
+Text | Checked that all fonts and colours used are consistent. | PASS
 
 ### Footer
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Facebook | When clicking Facebook icon, a new tab opens and redirects to the Facebook website. | PASS
-Twitter | When clicking Twitter icon, a new tab opens and redirects to the Twitter website. | PASS
-Instagram | When clicking Instagram icon, a new tab opens and redirects to the instagram website. | PASS
+Facebook | When clicking the Facebook icon, a new tab opens and redirects to the Facebook website. | PASS
+Twitter | When clicking the Twitter icon, a new tab opens and redirects to the Twitter website. | PASS
+Instagram | When clicking the Instagram icon, a new tab opens and redirects to the Instagram website. | PASS
 
 ### Home page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 
 ![index_google_lighthouse](documentation_assets/images/index_google_lighthouse.png)
@@ -397,8 +396,8 @@ Accessibility | Checked the accessibility of the page using lighthouse| PASS
 ### Menu page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 
@@ -407,8 +406,8 @@ Accessibility | Checked the accessibility of the page using lighthouse| PASS
 ### Contact page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Contact Form | Checked the form submits only when all fields are filled out. | Pass
@@ -418,20 +417,20 @@ Contact Form | Checked the form submits only when all fields are filled out. | P
 ### Booking page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Booking Form | Checked the form submits only when all required fields are filled out. | Pass
-If not signed in | Checked to see if the user has not signed in the booking form should not show and a message displays prompting the user to signup/sign in first. | Pass
+If not signed in | Checked to see if the user has not signed in the booking form should not show and a message displays prompting the user to signup/sign-in first. | Pass
 
 ![booking_google_lighthouse](documentation_assets/images/booking_google_lighthouse.png)
 
 ### Edit booking page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Edit Booking Form | Checked the form submits only when all required fields are filled out. | Pass
 
@@ -440,8 +439,8 @@ Edit Booking Form | Checked the form submits only when all required fields are f
 ### Manage booking page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Edit booking button | Checked that the button redirects to the edit booking page with the correct booking instance. | Pass
 Cancel booking button | Checked that the button redirects to the cancel booking page with the correct booking instance. | Pass
@@ -451,30 +450,30 @@ Cancel booking button | Checked that the button redirects to the cancel booking 
 ### Edit profile page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Edit profile form | Checked the form submits only when all required fields are filled out. | Pass
-If profile is has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | Pass
+If the profile has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | Pass
 
 ![edit_profile_google_lighthouse](documentation_assets/images/edit_profile_google_lighthouse.png)
 
 ### Register page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Resgister form | Checked the form submits only when all required fields are filled out. | Pass
-Sign in link | Checked the sign in link redirects to the sign in page. | Pass
+Register form | Checked the form submits only when all required fields are filled out. | Pass
+Sign in link | Checked the sign-in link redirects to the sign-in page. | Pass
 
 ![signup_google_lighthouse](documentation_assets/images/sign_up_google_lighthouse.png)
 
 ### Sign in page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
-Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Sign in form | Checked the form submits only when all required fields are filled out. | Pass
 Signup link | Checked the signup link redirects to the signup page. | Pass
@@ -488,11 +487,11 @@ Signup link | Checked the signup link redirects to the signup page. | Pass
 [Go to the top](#table-of-contents)
 
 ## Project Checklist
-- Install Django and the supporting libaries
+- Install Django and the supporting libraries
     -  Install Django and Gunicorn. Gunicorn is the server I am using to run Django on Heroku.
-    - Install support libaries including psycopg2, this is used to connect the the PostgreSQL databse
-    - Install Cloudinary libaries, this is a host provider service that stores images
-    - Create the requirements.txt file. This is includes the projects dependecies allowing us to run the project in Heroku.
+    - Install support libraries including psycopg2, this is used to connect the PostgreSQL database
+    - Install Cloudinary libraries, this is a host provider service that stores images
+    - Create the requirements.txt file. This includes the project's dependencies allowing us to run the project in Heroku.
 
 - Create a new, blank Django Project
     - Create a new project
@@ -516,28 +515,28 @@ Signup link | Checked the signup link redirects to the signup page. | Pass
         - Select Heroku Postgres
         - Submit order form
 
-    - Prepare environment and settings.py file
+    - Prepare the environment and settings.py file
         - Create env.py file
         - Add DATABASE_URL with the Postgres URL from Heroku
         - Add SECRET_KEY with a randomly generated key
         - Add SECRET_KEY and generated key to the config vars in Heroku
         - Add if statement to settings.py to prevent the production server from erroring
-        - Replace insecure key with the enviroment variable for the SECRET_KEY
+        - Replace insecure key with the environment variable for the SECRET_KEY
         - Add Heroku database as the back end
-        - Migrate changes to new databse
+        - Migrate changes to new database
 
     - Get static media files stored on Cloudinary
-        - Create Cloudinary account
+        - Create a Cloudinary account
         - From the dashboard, copy the API Environment variable
-        - In the settings.py file create a new enviroment variable for CLOUDINARY_URL
+        - In the settings.py file create a new environment variable for CLOUDINARY_URL
         - Add the CLOUDINARY_URL variable to Heroku
         - Add a temporary config var for DISABLE_COLLECTSTATIC
         - In settings.py add Cloudinary as an installed app
         - Add static and media file variables
         - Add templates directory
         - Change DIR's key to point to TEMPALTES_DIR
-        - Add Heroku host name to allowed hosts
-        - Create directories for media, static and templates in project workspace
+        - Add Heroku hostname to allowed hosts
+        - Create directories for media, static and templates in the project workspace
         - Create a Procfile
 
 - Deploy new empty project to Heroku
@@ -607,13 +606,13 @@ Sign Out Page:
 ![sign_out_mobile_preview](documentation_assets/images/sign_out_mobile_preview.png)
 
 
-
 <a name="known-bugs"></a>
 
 # 8. Known Bugs
 
 [Go to the top](#table-of-contents)
 
+- Some items in the navigation bar don't have a is active red background to show the user they are on the selected page.
 
 <a name="credits"></a>
 
@@ -635,6 +634,6 @@ Sign Out Page:
 
 -   The banner image from the home page came from [PNGItem](https://pngtree.com/freebackground/chinese-food-pasta-simple-white-banner_1059420.html).
 
--   The chinese food image on the menu page came from [Google Images](tinyurl.com/68hzut9u).
+-   The Chinese food image on the menu page came from [Google Images](tinyurl.com/68hzut9u).
 
--   The chinese food image on the menu page came from [Google Maps](https://www.maps.ie/create-google-map/).
+-   The Chinese food image on the menu page came from [Google Maps](https://www.maps.ie/create-google-map/).
