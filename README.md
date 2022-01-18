@@ -381,15 +381,24 @@ Facebook | When clicking Facebook icon, a new tab opens and redirects to the Fac
 Twitter | When clicking Twitter icon, a new tab opens and redirects to the Twitter website. | PASS
 Instagram | When clicking Instagram icon, a new tab opens and redirects to the instagram website. | PASS
 
+### Menu page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+
+![index_google_lighthouse](documentation_assets/images/index_google_lighthouse.png)
+
 ### Home page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Media| All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
 Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 
-![index_google_lighthouse](documentation_assets/images/index_google_lighthouse.png)
+![menu_google_lighthouse](documentation_assets/images/menu_google_lighthouse.png)
 
 <a name="development-cycle"></a>
 
