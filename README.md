@@ -536,6 +536,51 @@ Home Page:
 
 ![home_page_mobile_preview](documentation_assets/images/homepage_mobile_preview.png)
 
+Menu Page:
+![menu_desktop_preview](documentation_assets/images/menu_desktop_preview.png)
+
+![menu_mobile_preview](documentation_assets/images/menu_mobile_preview.png)
+
+Contact Page:
+![contact_desktop_preview](documentation_assets/images/contact_deskop_preview.png)
+
+![contact_mobile_preview](documentation_assets/images/contact_mobile_preview.png)
+
+Book Now Page:
+![booking_desktop_preview](documentation_assets/images/booking_desktop_preview.png)
+
+![booking_mobile_preview](documentation_assets/images/booking_mobile_preview.png)
+
+Manage Booking Page:
+![manage_booking_desktop_preview](documentation_assets/images/manage_booking_desktop_preview.png)
+
+![manage_booking_mobile_preview](documentation_assets/images/manage_booking_mobile_preview.png)
+
+Edit Booking Page:
+![edit_booking_desktop_preview](documentation_assets/images/edit_booking_desktop_preview.png)
+
+![edit_booking_mobile_preview](documentation_assets/images/edit_booking_mobile_preview.png)
+
+Edit Profile Page:
+![edit_profile_desktop_preview](documentation_assets/images/edit_profile_desktop_preview.png)
+
+![edit_profile_mobile_preview](documentation_assets/images/edit_profile_mobile_preview.png)
+
+Register Page:
+![register_desktop_preview](documentation_assets/images/register_desktop_preview.png)
+
+![register_mobile_preview](documentation_assets/images/register_mobile_preview.png)
+
+Sign In Page:
+![sign_in_desktop_preview](documentation_assets/images/sign_in_desktop_preview.png)
+
+![sign_in_mobile_preview](documentation_assets/images/sign_in_mobile_preview.png)
+
+Sign Out Page:
+![sign_out_desktop_preview](documentation_assets/images/sign_out_desktop_preview.png)
+
+![sign_out_mobile_preview](documentation_assets/images/sign_out_mobile_preview.png)
+
 
 
 <a name="known-bugs"></a>
