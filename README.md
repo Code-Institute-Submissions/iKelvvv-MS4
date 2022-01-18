@@ -366,7 +366,7 @@ TEST            | OUTCOME                          | PASS / FAIL
 --------------- | -------------------------------- | ---------------
 Home page | When clicking the "home" button in the navigation bar, the browser redirects me to the home page. The is active styling will appear as the home button has a red background. | PASS
 Menu page | When clicking the "menu" button in the navigation bar, the browser redirects me to the menu page. The is active styling will appear as the menu button has a red background. | PASS
-Contact page| When clicking the "contact" button in the navigation bar, the browser redirects me to the contact page. The is active styling will appear as the contact button has a red background. | PASS
+Contact page | When clicking the "contact" button in the navigation bar, the browser redirects me to the contact page. The is active styling will appear as the contact button has a red background. | PASS
 Book now page | When clicking the "book now" button in the navigation bar, the browser redirects me to the book now page page. The is active styling will appear as the book now button has a red background.| PASS
 Edit profile page | Checked foreground information is not distracted by backgrounds| PASS
 Register page | When clicking the "register" button in the navigation bar, the browser redirects me to the register page. The user will know they have are on this page by the heading. | PASS
@@ -381,7 +381,7 @@ Facebook | When clicking Facebook icon, a new tab opens and redirects to the Fac
 Twitter | When clicking Twitter icon, a new tab opens and redirects to the Twitter website. | PASS
 Instagram | When clicking Instagram icon, a new tab opens and redirects to the instagram website. | PASS
 
-### Menu page
+### Home page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
@@ -390,7 +390,7 @@ Accessibility | Checked the accessibility of the page using lighthouse| PASS
 
 ![index_google_lighthouse](documentation_assets/images/index_google_lighthouse.png)
 
-### Home page
+### Menu page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
@@ -399,6 +399,32 @@ Book now button | When clicking the book now button on the page, the browser red
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 
 ![menu_google_lighthouse](documentation_assets/images/menu_google_lighthouse.png)
+
+### Contact page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Contact Form | Checked the form submits only when all fields are filled out. | Pass
+
+![contact_google_lighthouse](documentation_assets/images/contact_google_lighthouse.png)
+
+### Booking page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Booking Form | Checked the form submits only when all required fields are filled out. | Pass
+If not signed in | Checked to see if the user has not signed in the booking form should not show and a message displays prompting the user to signup/sign in first. | Pass
+
+![booking_google_lighthouse](documentation_assets/images/booking_google_lighthouse.png)
+
+
+
 
 <a name="development-cycle"></a>
 
