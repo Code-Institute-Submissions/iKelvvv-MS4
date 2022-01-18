@@ -368,8 +368,9 @@ Home page | When clicking the "home" button in the navigation bar, the browser r
 Menu page | When clicking the "menu" button in the navigation bar, the browser redirects me to the menu page. The is active styling will appear as the menu button has a red background. | PASS
 Contact page | When clicking the "contact" button in the navigation bar, the browser redirects me to the contact page. The is active styling will appear as the contact button has a red background. | PASS
 Book now page | When clicking the "book now" button in the navigation bar, the browser redirects me to the book now page page. The is active styling will appear as the book now button has a red background.| PASS
+Manage booking page | When clicking the "manage bookings" button in the navigation bar, the browser redirects me to the manage booking page page. The user will know they are on this page by the heading. | PASS
 Edit profile page | Checked foreground information is not distracted by backgrounds| PASS
-Register page | When clicking the "register" button in the navigation bar, the browser redirects me to the register page. The user will know they have are on this page by the heading. | PASS
+Register page | When clicking the "register" button in the navigation bar, the browser redirects me to the register page. The user will know they are on this page by the heading. | PASS
 Login / Logout page | When clicking the "login" or "logout button in the navigation bar, the browser redirects me to the login or logout page. The user will know they have are on this page by the heading. | PASS
 Foreground & background colour | Checked foreground information is not distracted by background animation. | PASS
 Text | Checked that all fonts and colours used are consistent | PASS
@@ -422,6 +423,27 @@ Booking Form | Checked the form submits only when all required fields are filled
 If not signed in | Checked to see if the user has not signed in the booking form should not show and a message displays prompting the user to signup/sign in first. | Pass
 
 ![booking_google_lighthouse](documentation_assets/images/booking_google_lighthouse.png)
+
+### Edit booking page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Edit Booking Form | Checked the form submits only when all required fields are filled out. | Pass
+
+![edit_booking_google_lighthouse](documentation_assets/images/edit_booking_google_lighthouse.png)
+
+### Manage booking page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on page for consistent scalability in mobile, tablet and desktop view.| PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Edit booking button | Checked that the button redirects to the edit booking page with the correct booking instance. | Pass
+Cancel booking button | Checked that the button redirects to the cancel booking page with the correct booking instance. | Pass
+
+![manage_booking_google_lighthouse](documentation_assets/images/manage_booking_google_lighthouse.png)
 
 ### Edit profile page
 TEST            | OUTCOME                          | PASS / FAIL  
