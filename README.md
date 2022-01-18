@@ -111,10 +111,13 @@ As I am unable to include all of the features from the strategy table. I will ph
 
 It is really important to include responsive design in this project as many users are using different devices (mobile, tablet, laptop/PC). This gives the user the best experience on their device.
 
-Responsive on all device sizes
-Easy navigation through labelled buttons
-Footer at the bottom of the index page that links to the social media website.
-All elements will be consistent including font size, font family, colour scheme.
+- Responsive on all device sizes
+- Easy navigation through labelled buttons
+- Footer at the bottom of the index page that links to the social media website.
+- All elements will be consistent including font size, font family, colour scheme.
+
+### Database Model
+![database_model](documentation_assets/images/database_model.png)
 
 <a name="skeleton"></a>
 
@@ -612,7 +615,6 @@ Sign Out Page:
 [Go to the top](#table-of-contents)
 
 
-
 <a name="credits"></a>
 
 # 9. Credits
@@ -620,5 +622,19 @@ Sign Out Page:
 [Go to the top](#table-of-contents)
 
 ### Code
+-   The navigation bar came from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar).
+
+- The JavaScript code to set the online booking form to default to the current date came from [Stack Overflow](https://stackoverflow.com/questions/6982692/how-to-set-input-type-dates-default-value-to-today).
+
+- The JavaScript code to disable any previous dates on the online booking form came from [Demo2s](https://www.demo2s.com/javascript/javascript-input-date-input-type-date-disable-dates-before-today.html).
 
 ### Content
+-   The restaurant logo came from [Adobe Creative Cloud Express logo maker](https://www.adobe.com/express/create/logo).
+
+-   The dragon image from the home page came from [PNGItem](https://www.pngitem.com/middle/wRmbRx_red-dragon-png-red-chinese-dragon-png-transparent/).
+
+-   The banner image from the home page came from [PNGItem](https://pngtree.com/freebackground/chinese-food-pasta-simple-white-banner_1059420.html).
+
+-   The chinese food image on the menu page came from [Google Images](tinyurl.com/68hzut9u).
+
+-   The chinese food image on the menu page came from [Google Maps](https://www.maps.ie/create-google-map/).
