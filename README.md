@@ -303,6 +303,8 @@ The user will then need to select a date, time, number of guests and enter any a
     -   The project uses Python.
 -   [Boostrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
     -   The project uses Bootstrap 5.
+-   [PostgreSQL](https://www.postgresql.org/)
+    -   The project uses PostgreSQL as a database.
 -   [Gitpod](https://www.gitpod.io/)
     -   The project uses Gitpod.
 -   [Chrome](https://www.google.com/intl/en_uk/chrome/)
