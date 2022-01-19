@@ -49,7 +49,7 @@ class ContactView(TemplateView):
 
 class CreateProfile(View):
     template_name = "create_profile.html"
-    
+
     def get(self, request, *args, **kwargs):
         return render(
             request,
@@ -120,6 +120,9 @@ class ManageBooking(generic.ListView):
     queryset = Booking.objects.all()
     template_name = "manage_booking.html"
     paginate_by = 6
+    extra_context = {
+        "manage_booking_active": "custom-red"
+    }
 
     def get_queryset(self):
         return Booking.objects.filter(user_id=self.request.user)
