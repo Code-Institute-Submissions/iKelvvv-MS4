@@ -3,6 +3,8 @@
 ## Introduction
 Welcome to my fourth project. This project is a simple restaurant booking system, allow users to book a table for this restaurant. This will use languages such as Django, Python, HTML, CSS and JavaScript.
 
+This project will show the use of CRUD functionality (Create, Read, Update, Delete). The user will be able create, read, update and delete their user profile and table booking.
+
 A live website can be found [here]().
 
 ![website preview](documentation_assets/images/website_preview.png)
