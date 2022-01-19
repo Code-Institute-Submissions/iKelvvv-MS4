@@ -116,7 +116,11 @@ It is really important to include responsive design in this project as many user
 - All elements will be consistent including font size, font family, colour scheme.
 
 ### Database Model
+Planned database structure:
 ![database_model](documentation_assets/images/database_model.png)
+
+Final database structure:
+![final_database_model](documentation_assets/images/final_database_model.png)
 
 <a name="skeleton"></a>
 
