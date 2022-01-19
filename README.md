@@ -69,6 +69,11 @@ The system should have a simple user interface, with the navigation to each sect
 -   The website is responsive on all devices.
 -   To have the ability to contact the restaurant for any enquiries.
 
+### User Stories
+Throughout the project I used the GitHub projects board to log all user stories. This helped me keep focus on the necesarry tasks as I would move them to the in progress lane as I'm working on the story. I would then move them to the done lane once the story has been completed.
+
+![user_story_board](documentation_assets/images/project_board.png)
+
 ### Strategy Table
 Opportunity/Problem/Feature| Importance| Viability/Feasibility
 ------------ | -------------------------|---------
