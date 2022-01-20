@@ -669,6 +669,8 @@ Sign Out Page:
 
 - Some items in the navigation bar don't have a is active red background to show the user they are on the selected page.
 
+- Some forms for this project is built by using the django-crispy-forms libraries therefore, some of the fields do not contain all the validation rules as I cannot target the individual inputs. For example on the edit profile form, I have add the validation rule so that the user can only enter a number, however I couldnt not figure out a way to add a min and max length value.
+
 <a name="credits"></a>
 
 # 9. Credits
