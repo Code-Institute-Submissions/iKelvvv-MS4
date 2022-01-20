@@ -108,6 +108,9 @@ As I am unable to include all of the features from the strategy table. I will ph
 ### Phase 2
 - Multiple table occupancies
 - Avoid double bookings
+- Contact form model, so messages are saved to the database
+- Email confirmation when a message has been received.
+- Account email verification
 
 <a name="structure"></a>
 
@@ -698,4 +701,4 @@ Sign Out Page:
 ### Project Acknowledgements
 - Code Institue Tutor Support - For directing me to the correct solutions for any bugs.
 
-- My Mentor - For his constructive critisim and always pushing me to go further to develop my skills.
+- My Mentor - For his constructive criticism and always pushing me to go further to develop my skills.
