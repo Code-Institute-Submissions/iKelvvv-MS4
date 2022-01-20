@@ -694,3 +694,8 @@ Sign Out Page:
 -   The Chinese food image on the menu page came from [Google Images](tinyurl.com/68hzut9u).
 
 -   The Chinese food image on the menu page came from [Google Maps](https://www.maps.ie/create-google-map/).
+
+### Project Acknowledgements
+- Code Institue Tutor Support - For directing me to the correct solutions for any bugs.
+
+- My Mentor - For his constructive critisim and always pushing me to go further to develop my skills.
