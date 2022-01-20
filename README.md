@@ -72,7 +72,7 @@ The system should have a simple user interface, with the navigation to each sect
 -   To have the ability to contact the restaurant for any enquiries.
 
 ### User Stories
-Throughout the project I used the GitHub projects board to log all user stories. This helped me keep focus on the necesarry tasks as I would move them to the in progress lane as I'm working on the story. I would then move them to the done lane once the story has been completed.
+Throughout the project I used the GitHub projects board to log all user stories as my project management tool. This helped me keep focus on the necesarry tasks as I would move them to the "in progress lane" as I'm working on the story. I would then move them to the "done" lane once the story has been completed.
 
 ![user_story_board](documentation_assets/images/project_board.png)
 
@@ -127,7 +127,34 @@ Planned database structure:
 ![database_model](documentation_assets/images/database_model.png)
 
 Final database structure:
-![final_database_model](documentation_assets/images/final_database_model.png)
+
+```python
+class Booking(models.Model):
+    booking_id = models.UUIDField(
+        primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="user_bookings")
+    booking_date = models.DateField(auto_now=False)
+    booking_time = models.TimeField(auto_now=False)
+    booking_comments = models.TextField(max_length=200, blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    guest_count = models.IntegerField()
+    status = models.IntegerField(choices=STATUS, default=0)
+
+    class Meta:
+        ordering = ['-booking_date']
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE, primary_key=True)
+    first_name = models.CharField(max_length=150)
+    last_name = models.CharField(max_length=150)
+    phone_number = models.CharField(max_length=11)
+
+    def __str__(self):
+        return str(self.user)
+```
 
 <a name="skeleton"></a>
 
@@ -356,7 +383,7 @@ I had no errors in my CSS file:
 ![css_validation](documentation_assets/images/css_validation.png)
 
 ### JavaScript:
-I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScript file.
+I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScript file. JS Hint showed warnings on line 1 which was missing a semicolon, however as this was for the script tag I have ignored it. This piece of JavaScript was along copied and pasted from an external source therefore, I have not made any changes to the code.
 
 I had no errors in my JavaScript files:
 ![javascript_validation](documentation_assets/images/javascript_validation.png)
@@ -423,7 +450,7 @@ Media | All media assets are displayed properly, have no pixelation or stretched
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Contact Form | Checked the form submits only when all fields are filled out. | Pass
+Contact Form | Checked the form submits only when all fields are filled out. | PASS
 
 ![contact_google_lighthouse](documentation_assets/images/contact_google_lighthouse.png)
 
@@ -434,8 +461,8 @@ Media | All media assets are displayed properly, have no pixelation or stretched
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Book now button | When clicking the book now button on the page, the browser redirects to the booking page. | PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Booking Form | Checked the form submits only when all required fields are filled out. | Pass
-If not signed in | Checked to see if the user has not signed in the booking form should not show and a message displays prompting the user to signup/sign-in first. | Pass
+Booking Form | Checked the form submits only when all required fields are filled out. | PASS
+If not signed in | Checked to see if the user has not signed in the booking form should not show and a message displays prompting the user to signup/sign-in first. | PASS
 
 ![booking_google_lighthouse](documentation_assets/images/booking_google_lighthouse.png)
 
@@ -445,7 +472,7 @@ TEST            | OUTCOME                          | PASS / FAIL
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Edit Booking Form | Checked the form submits only when all required fields are filled out. | Pass
+Edit Booking Form | Checked the form submits only when all required fields are filled out. | PASS
 
 ![edit_booking_google_lighthouse](documentation_assets/images/edit_booking_google_lighthouse.png)
 
@@ -455,8 +482,8 @@ TEST            | OUTCOME                          | PASS / FAIL
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Edit booking button | Checked that the button redirects to the edit booking page with the correct booking instance. | Pass
-Cancel booking button | Checked that the button redirects to the cancel booking page with the correct booking instance. | Pass
+Edit booking button | Checked that the button redirects to the edit booking page with the correct booking instance. | PASS
+Cancel booking button | Checked that the button redirects to the cancel booking page with the correct booking instance. | PASS
 
 ![manage_booking_google_lighthouse](documentation_assets/images/manage_booking_google_lighthouse.png)
 
@@ -466,8 +493,8 @@ TEST            | OUTCOME                          | PASS / FAIL
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Edit profile form | Checked the form submits only when all required fields are filled out. | Pass
-If the profile has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | Pass
+Edit profile form | Checked the form submits only when all required fields are filled out. | PASS
+If the profile has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | PASS
 
 ![edit_profile_google_lighthouse](documentation_assets/images/edit_profile_google_lighthouse.png)
 
@@ -477,8 +504,8 @@ TEST            | OUTCOME                          | PASS / FAIL
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Register form | Checked the form submits only when all required fields are filled out. | Pass
-Sign in link | Checked the sign-in link redirects to the sign-in page. | Pass
+Register form | Checked the form submits only when all required fields are filled out. | PASS
+Sign in link | Checked the sign-in link redirects to the sign-in page. | PASS
 
 ![signup_google_lighthouse](documentation_assets/images/sign_up_google_lighthouse.png)
 
@@ -488,8 +515,8 @@ TEST            | OUTCOME                          | PASS / FAIL
 Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Sign in form | Checked the form submits only when all required fields are filled out. | Pass
-Signup link | Checked the signup link redirects to the signup page. | Pass
+Sign in form | Checked the form submits only when all required fields are filled out. | PASS
+Signup link | Checked the signup link redirects to the signup page. | PASS
 
 ![sign_in_google_lighthouse](documentation_assets/images/sign_in_google_lighthouse.png)
 
