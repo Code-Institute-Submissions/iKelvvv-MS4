@@ -473,6 +473,7 @@ Media | All media assets are displayed properly, have no pixelation or stretched
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Edit Booking Form | Checked the form submits only when all required fields are filled out. | PASS
+Form validation | Checked that the telephone number input only allows number input and not any text | PASS
 
 ![edit_booking_google_lighthouse](documentation_assets/images/edit_booking_google_lighthouse.png)
 
@@ -486,6 +487,20 @@ Edit booking button | Checked that the button redirects to the edit booking page
 Cancel booking button | Checked that the button redirects to the cancel booking page with the correct booking instance. | PASS
 
 ![manage_booking_google_lighthouse](documentation_assets/images/manage_booking_google_lighthouse.png)
+
+### Create profile page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly, have no pixelation or stretched images and is responsive on all devices. | PASS
+Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Create profile form | Checked the form submits only when all required fields are filled out. | PASS
+If the profile has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | PASS
+Form validation | Checked that the telephone number input only allows number input and not any text | PASS
+
+![create_profile_validation](documentation_assets/images/create_profile_input_validation.png)
+![create_profile_google_lighthouse](documentation_assets/images/create_profile_google_lighthouse.png)
+
 
 ### Edit profile page
 TEST            | OUTCOME                          | PASS / FAIL  
