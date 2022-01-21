@@ -11,8 +11,6 @@ class UpdateBookingDetails(forms.ModelForm):
 
 
 class EditProfileForm(forms.ModelForm):
-    phone_number = forms.IntegerField()
-
     class Meta:
         model = UserProfile
         fields = ('first_name', 'last_name', 'phone_number')
