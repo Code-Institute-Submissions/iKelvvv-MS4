@@ -512,6 +512,7 @@ Media | All media assets are displayed properly, have no pixelation or stretched
 Responsiveness | Check every element on-page for consistent scalability in mobile, tablet and desktop view.| PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
 Edit profile form | Checked the form submits only when all required fields are filled out. | PASS
+Form validation | Checked that the telephone number input only allows number input and not any text | PASS
 If the profile has not been created | Checked to see if the user has created a profile, if not it will redirect the user to the create profile page | PASS
 
 ![edit_profile_google_lighthouse](documentation_assets/images/edit_profile_google_lighthouse.png)
