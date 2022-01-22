@@ -386,12 +386,25 @@ I had no errors in my CSS file:
 ![css_validation](documentation_assets/images/css_validation.png)
 
 ### JavaScript:
-I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScript file. JS Hint showed warnings on line 1 which was missing a semicolon, however as this was for the script tag I have ignored it. This piece of JavaScript was along copied and pasted from an external source therefore, I have not made any changes to the code.
+I used [JS Hint](https://jshint.com/) to check for any errors within my JavaScript script tags. JS Hint showed warnings on line 1 which was missing a semicolon, however as this was for the script tag I have ignored it. This piece of JavaScript was along copied and pasted from an external source therefore, I have not made any changes to the code.
 
 I had no errors in my JavaScript files:
 ![javascript_validation](documentation_assets/images/javascript_validation.png)
 
 ### Python:
+I used [PEP8 online](http://pep8online.com/) to check for any errors within my Python files. The validator showed multiple "line too long" errors. This was rectified by adding each statement as a new line.
+
+urls.py errors:
+![urls_errors](documentation_assets/images/urls_errors.png)
+
+Fixed urls.py validation:
+![urls_fixed_errors](documentation_assets/images/urls_fixed_errors.png)
+
+There were also "line too long" errors within my settings.py file but I have chosen to ignore these as this is a very important file.
+
+settings.py errors:
+![settings_errors](documentation_assets/images/settings_errors.png)
+
 
 ## Manual Testing
 I have tested my site on Safari and google chrome on multiple devices.
