@@ -602,6 +602,23 @@ Signup link | Checked the signup link redirects to the signup page. | PASS
 
 [Go to the top](#table-of-contents)
 
+I used the terminal to deploy my project locally. To do this I had to:
+1. Create a repository on GitHub.
+2. Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
+3. Open the terminal within GitPod
+4. Enter "python3 manage.py runserver into the terminal.
+5. Go to local host address on my web browser.
+6. All locally saved changes will show up here.
+
+For the final deployment to Heroku, I had to:
+1. Uncomment the PostgreSQL databse from my settings.py file.
+2. Set debug = False in my settings.py file.
+3. Commit and push all files to GitHub
+3. In Heroku, remove the DISABLE_COLLECTSTATIC config var.
+4. In the deploy tab, go to the manual deploy sections and click deploy branch.
+
+I had an issue with the deployed site and the CSS was not showing on my screen.
+This was rectified by restarting all dynos in Heroku.
 
 <a name="end-product"></a>
 
