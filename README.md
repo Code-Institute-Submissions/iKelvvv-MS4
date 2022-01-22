@@ -672,6 +672,8 @@ Sign In Page:
 Sign Out Page:
 ![sign_out_desktop_preview](documentation_assets/images/sign_out_desktop_preview.png)
 
+![sign_out_mobile_preview](documentation_assets/images/sign_out_mobile_preview.png)
+
 <a name="known-bugs"></a>
 
 # 8. Known Bugs
