@@ -5,7 +5,7 @@ Welcome to my fourth project. This project is a simple restaurant booking system
 
 This project will show the use of CRUD functionality (Create, Read, Update, Delete). The user will be able create, read, update and delete their user profile and table booking.
 
-A live website can be found [here]().
+A live website can be found [here](https://top-chef-kelvin.herokuapp.com/).
 
 ![website preview](documentation_assets/images/website_preview.png)
 
@@ -111,6 +111,7 @@ As I am unable to include all of the features from the strategy table. I will ph
 - Contact form model, so messages are saved to the database
 - Email confirmation when a message has been received.
 - Account email verification
+- Replace django-crispy forms with HTML forms for easier control of validation and styling
 
 <a name="structure"></a>
 
@@ -169,9 +170,6 @@ class UserProfile(models.Model):
 
 Home/Landing Page Desktop:
 ![home_page_desktop](documentation_assets/wireframes/home_desktop.png)
-
-Home/Landing Page Mobile:
-![home_page_mobile](documentation_assets/wireframes/home_mobile.png)
 
 Menu Page Desktop:
 ![menu_page_desktop](documentation_assets/wireframes/menu_desktop.png)
@@ -673,9 +671,6 @@ Sign In Page:
 
 Sign Out Page:
 ![sign_out_desktop_preview](documentation_assets/images/sign_out_desktop_preview.png)
-
-![sign_out_mobile_preview](documentation_assets/images/sign_out_mobile_preview.png)
-
 
 <a name="known-bugs"></a>
 
